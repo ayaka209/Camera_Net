@@ -58,6 +58,7 @@ namespace Camera_NET
         /// VideoMixingRenderer9
         /// </summary>
         public IBaseFilter      VMRenderer = null;
+        public IBaseFilter      AudioFilter = null;
 
         /// <summary>
         /// Crossbar (on some devices)
@@ -105,7 +106,11 @@ namespace Camera_NET
                 WindowlessCtrl = null;
                 MixerBitmap = null;
             }
-
+            if (AudioFilter != null)
+            {
+                Marshal.ReleaseComObject(AudioFilter);
+                AudioFilter = null;
+            }
             if (FilterGraph != null)
             {
                 Marshal.ReleaseComObject(FilterGraph);

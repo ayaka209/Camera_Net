@@ -106,6 +106,7 @@ namespace Camera_NET
         /// Private field. Use the public property <see cref="VideoInput"/> for access to this value.
         /// </summary>
         private VideoInput _VideoInput = VideoInput.Default;
+        private AudioInput _AudioInput = AudioInput.Default;
 
         /// <summary>
         /// Private field. Use the public property <see cref="DirectShowLogFilepath"/> for access to this value.
@@ -401,7 +402,28 @@ namespace Camera_NET
                 }
             }
         }
+        public AudioInput AudioInput
+        {
+            get
+            {
+                return _AudioInput;
+            }
+            set
+            {
+                if (value == null)
+                    throw new ArgumentNullException("VideoInput", "VideoInput should not be set to null, use Default instead.");
 
+                _AudioInput = value;
+
+                // If we need to change
+                if (_bGraphIsBuilt)
+                {
+                    SetCrossbarInput(DX.Crossbar, _AudioInput);
+
+                   // _AudioInput = GetCrossbarInput(DX.Crossbar);
+                }
+            }
+        }
         /// <summary>
         /// Log file path for directshow (used in BuildGraph)
         /// </summary> 
@@ -713,11 +735,11 @@ namespace Camera_NET
             //int hr = graph_guilder.RenderStream(PinCategory.Preview, MediaType.Video, DX.CaptureFilter, null, DX.VMRenderer);
             //DsError.ThrowExceptionForHR(hr);
 
-            if (DX.MediaControl != null)
-            {
-                int hr = DX.MediaControl.Run();
-                DsError.ThrowExceptionForHR(hr);
-            }
+           if (DX.MediaControl != null)
+           {
+               int hr = DX.MediaControl.Run();
+               DsError.ThrowExceptionForHR(hr);
+           }
 
         }
 
@@ -823,7 +845,6 @@ namespace Camera_NET
                 return;
 
             IAMAnalogVideoDecoder pDecoder = DX.CaptureFilter as IAMAnalogVideoDecoder;
-
             if (pDecoder == null)
                 return;
 
@@ -1208,10 +1229,12 @@ namespace Camera_NET
         {
             // Pins used in graph
             IPin pinSourceCapture = null;
+            IPin pinSourceAudio = null;
 
             IPin pinTeeInput = null;
             IPin pinTeePreview = null;
             IPin pinTeeCapture = null;
+            IPin pinAudioCapture = null;
 
             IPin pinSampleGrabberInput = null;
 
@@ -1222,8 +1245,11 @@ namespace Camera_NET
             try
             {
                 // Collect pins
-                //pinSourceCapture = DsFindPin.ByCategory(DX.CaptureFilter, PinCategory.Capture, 0);
+               // pinSourceCapture = DsFindPin.ByCategory(DX.CaptureFilter, PinCategory.Capture, 0);
                 pinSourceCapture = DsFindPin.ByDirection(DX.CaptureFilter, PinDirection.Output, 0);
+                pinSourceAudio = DsFindPin.ByDirection(DX.CaptureFilter, PinDirection.Output, 1);
+                //PinInfo pi = new PinInfo();
+                
 
                 pinTeeInput = DsFindPin.ByDirection(DX.SmartTee, PinDirection.Input, 0);
                 pinTeePreview = DsFindPin.ByName(DX.SmartTee, "Preview");
@@ -1231,6 +1257,7 @@ namespace Camera_NET
 
                 pinSampleGrabberInput = DsFindPin.ByDirection(DX.SampleGrabberFilter, PinDirection.Input, 0);
                 pinRendererInput = DsFindPin.ByDirection(DX.VMRenderer, PinDirection.Input, 0);
+                pinAudioCapture = DsFindPin.ByDirection(DX.AudioFilter, PinDirection.Input, 0);
 
                 // Connect source to tee splitter
                 hr = DX.FilterGraph.Connect(pinSourceCapture, pinTeeInput);
@@ -1243,6 +1270,11 @@ namespace Camera_NET
                 // Connect the capture-pin of tee splitter to the renderer
                 hr = DX.FilterGraph.Connect(pinTeeCapture, pinRendererInput);
                 DsError.ThrowExceptionForHR(hr);
+                
+                // Connect the capture-pin of tee splitter to the renderer
+               hr = DX.FilterGraph.Connect(pinSourceAudio, pinAudioCapture);
+               DsError.ThrowExceptionForHR(hr);
+                
             }
             catch
             {
@@ -1338,6 +1370,7 @@ namespace Camera_NET
 
                 // Route Crossbar's inputs
                 SetCrossbarInput(DX.Crossbar, _VideoInput);
+                SetCrossbarInput(DX.Crossbar, _AudioInput);
 
                 _VideoInput = GetCrossbarInput(DX.Crossbar);
             }
@@ -1349,14 +1382,20 @@ namespace Camera_NET
         private void AddFilter_Renderer()
         {
             int hr = 0;
+            int hr2 = 0;
 
             DX.VMRenderer = (IBaseFilter) new VideoMixingRenderer9();
+            DX.AudioFilter = (IBaseFilter) new DSoundRender();
+            //var dsr = new DirectShowLib.DSoundRender();
 
+            
             ConfigureVMRInWindowlessMode();
 
 
             hr = DX.FilterGraph.AddFilter(DX.VMRenderer, "Video Mixing Renderer 9");
+            hr2 = DX.FilterGraph.AddFilter(DX.AudioFilter, "Audio Renderer");
             DsError.ThrowExceptionForHR(hr);
+            DsError.ThrowExceptionForHR(hr2);
         }
 
         /// <summary>
@@ -1589,6 +1628,68 @@ namespace Camera_NET
                         else
                         {
                             throw new Exception("Can't route from selected VideoInput to VideoDecoder.");
+                        }
+                    }
+                    else
+                    {
+                        throw new Exception("Can't find routing pins.");
+                    }
+
+                }
+            }
+        }
+        private static void SetCrossbarInput(IAMCrossbar crossbar, AudioInput audioInput)
+        {
+            if (audioInput.Type != AudioInput.PhysicalConnectorType_Default &&
+                audioInput.Index != -1)
+            {
+                int inPinsCount, outPinsCount;
+
+                // gen number of pins in the crossbar
+                if (crossbar.get_PinCounts(out outPinsCount, out inPinsCount) == 0)
+                {
+                    int audioOutputPinIndex = -1;
+                    int audioInputPinIndex = -1;
+                    int pinIndexRelated;
+                    PhysicalConnectorType type;
+
+                    // find index of the video output pin
+                    for (int i = 0; i < outPinsCount; i++)
+                    {
+                        if (crossbar.get_CrossbarPinInfo(false, i, out pinIndexRelated, out type) != 0)
+                            continue;
+
+                        if (type == PhysicalConnectorType.Audio_AudioDecoder)
+                        {
+                            audioOutputPinIndex = i;
+                            break;
+                        }
+                    }
+
+                    // find index of the required input pin
+                    for (int i = 0; i < inPinsCount; i++)
+                    {
+                        if (crossbar.get_CrossbarPinInfo(true, i, out pinIndexRelated, out type) != 0)
+                            continue;
+
+                        if ((type == audioInput.Type) && (i == audioInput.Index))
+                        {
+                            audioInputPinIndex = i;
+                            break;
+                        }
+                    }
+
+                    // try connecting pins
+                    if ((audioInputPinIndex != -1) && (audioOutputPinIndex != -1))
+                    {
+                        if (crossbar.CanRoute(audioOutputPinIndex, audioInputPinIndex) == 0)
+                        {
+                            int hr = crossbar.Route(audioOutputPinIndex, audioInputPinIndex);
+                            DsError.ThrowExceptionForHR(hr);
+                        }
+                        else
+                        {
+                            throw new Exception("Can't route from selected AudioInput to AudioDecoder.");
                         }
                     }
                     else

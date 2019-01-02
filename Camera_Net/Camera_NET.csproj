@@ -132,6 +132,7 @@
     <Compile Include="Internal\NativeMethodes.cs" />
     <Compile Include="Public\Resolution.cs" />
     <Compile Include="Internal\SampleGrabberHelper.cs" />
+    <Compile Include="Public\AudioInput.cs" />
     <Compile Include="Public\VideoInput.cs" />
   </ItemGroup>
   <ItemGroup>
