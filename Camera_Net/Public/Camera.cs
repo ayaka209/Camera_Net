@@ -1234,6 +1234,9 @@ namespace Camera_NET
             IPin pinTeeInput = null;
             IPin pinTeePreview = null;
             IPin pinTeeCapture = null;
+            IPin pinInfTeeInput = null;
+            IPin pinInfTeeOutput = null;
+            IPin pinInfTeeOutput2 = null;
             IPin pinAudioCapture = null;
 
             IPin pinSampleGrabberInput = null;
@@ -1256,6 +1259,7 @@ namespace Camera_NET
                 DX.VMRenderer.SetSyncSource(null);
                 DX.AudioFilter.SetSyncSource(null);
                 DX.SmartTee.SetSyncSource(null);
+                DX.InfTee.SetSyncSource(null);
                 DX.SampleGrabberFilter.SetSyncSource(null);
                 IEnumFilters enumFilters;
                 hr = DX.FilterGraph.EnumFilters(out enumFilters);
@@ -1311,23 +1315,33 @@ namespace Camera_NET
                 pinTeeInput = DsFindPin.ByDirection(DX.SmartTee, PinDirection.Input, 0);
                 pinTeePreview = DsFindPin.ByName(DX.SmartTee, "Preview");
                 pinTeeCapture = DsFindPin.ByName(DX.SmartTee, "Capture");
+                pinInfTeeInput = DsFindPin.ByDirection(DX.InfTee, PinDirection.Input,0);
+                pinInfTeeOutput = DsFindPin.ByDirection(DX.InfTee, PinDirection.Output,0);
+                
+                
 
                 pinSampleGrabberInput = DsFindPin.ByDirection(DX.SampleGrabberFilter, PinDirection.Input, 0);
                 pinRendererInput = DsFindPin.ByDirection(DX.VMRenderer, PinDirection.Input, 0);
                 pinAudioCapture = DsFindPin.ByDirection(DX.AudioFilter, PinDirection.Input, 0);
 
                 // Connect source to tee splitter
-                hr = DX.FilterGraph.Connect(pinSourceCapture, pinTeeInput);
-                DsError.ThrowExceptionForHR(hr);
+                //hr = DX.FilterGraph.Connect(pinSourceCapture, pinTeeInput);
+                //DsError.ThrowExceptionForHR(hr);
 
-                // Connect samplegrabber on preview-pin of tee splitter
-                hr = DX.FilterGraph.Connect(pinTeePreview, pinSampleGrabberInput);
-                DsError.ThrowExceptionForHR(hr);
-
-                // Connect the capture-pin of tee splitter to the renderer
-                hr = DX.FilterGraph.Connect(pinTeeCapture, pinRendererInput);
+                hr = DX.FilterGraph.Connect(pinSourceCapture, pinInfTeeInput);
                 DsError.ThrowExceptionForHR(hr);
                 
+               // // Connect samplegrabber on preview-pin of tee splitter
+
+
+                // Connect the capture-pin of tee splitter to the renderer
+                hr = DX.FilterGraph.Connect(pinInfTeeOutput, pinRendererInput);
+                DsError.ThrowExceptionForHR(hr);
+
+                pinInfTeeOutput2 = DsFindPin.ByDirection(DX.InfTee, PinDirection.Output, 1);
+                 hr = DX.FilterGraph.Connect(pinInfTeeOutput2, pinSampleGrabberInput);
+                 DsError.ThrowExceptionForHR(hr);
+
                 // Connect the capture-pin of tee splitter to the renderer
                 hr = DX.FilterGraph.Connect(pinSourceAudio, pinAudioCapture);
                 DsError.ThrowExceptionForHR(hr);
@@ -1540,8 +1554,10 @@ namespace Camera_NET
 
             // Add a splitter
             DX.SmartTee = (IBaseFilter)new SmartTee();
+            DX.InfTee = (IBaseFilter)new InfTee();
 
             hr = DX.FilterGraph.AddFilter(DX.SmartTee, "SmartTee");
+            hr = DX.FilterGraph.AddFilter(DX.InfTee, "InfTee");
             DsError.ThrowExceptionForHR(hr);
         }
         

@@ -88,6 +88,7 @@ namespace Camera_NET
         /// Tee splitter
         /// </summary>
         public IBaseFilter      SmartTee = null;
+        public IBaseFilter      InfTee = null;
 
         /// <summary>
         /// Capture filter
