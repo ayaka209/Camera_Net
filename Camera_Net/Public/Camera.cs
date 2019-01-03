@@ -1249,7 +1249,64 @@ namespace Camera_NET
                 pinSourceCapture = DsFindPin.ByDirection(DX.CaptureFilter, PinDirection.Output, 0);
                 pinSourceAudio = DsFindPin.ByDirection(DX.CaptureFilter, PinDirection.Output, 1);
                 //PinInfo pi = new PinInfo();
+
+                IReferenceClock ss;
+                DX.CaptureFilter.GetSyncSource(out ss);
+                DX.CaptureFilter.SetSyncSource(null);
+                DX.VMRenderer.SetSyncSource(null);
+                DX.AudioFilter.SetSyncSource(null);
+                DX.SmartTee.SetSyncSource(null);
+                DX.SampleGrabberFilter.SetSyncSource(null);
+                IEnumFilters enumFilters;
+                hr = DX.FilterGraph.EnumFilters(out enumFilters);
+                DsError.ThrowExceptionForHR(hr);
+                IntPtr fetched = IntPtr.Zero;
+
+                IBaseFilter[] filters = { null };
+
+                int r = 0;
+                while (r == 0)
+                {
+                    try
+                    {
+                        r = enumFilters.Next(filters.Length, filters, fetched);
+                        DsError.ThrowExceptionForHR(r);
+
+                        if (filters == null || filters.Length == 0 || filters[0] == null) continue;
+
+                        foreach (var filter in filters)
+                        {
+                            filter.SetSyncSource(null);
+                        }
+                     
+                    }
+                    catch
+                    {
+                        r = 0;
+                        continue;
+                    }
+
+                }
+
+                Marshal.ReleaseComObject(enumFilters);
+
+
+                int BufferSizeMilliSeconds = 0;
+                IAMStreamConfig sc = (IAMStreamConfig)pinSourceAudio;
+                IAMBufferNegotiation bufferNegotiation = (IAMBufferNegotiation)pinSourceAudio;
+                AMMediaType mt;
+                hr = sc.GetFormat(out mt);
+                AllocatorProperties ap = new AllocatorProperties();
+                ap.cbAlign = -1;
+                ap.cbAlign = -1;
+                ap.cbPrefix = -1;
+                WaveFormatEx wf = (WaveFormatEx) Marshal.PtrToStructure(mt.formatPtr, typeof(WaveFormatEx));
+                ap.cbBuffer = wf.nAvgBytesPerSec * BufferSizeMilliSeconds/1000;
                 
+                
+                hr = bufferNegotiation.SuggestAllocatorProperties(ap);
+                DsError.ThrowExceptionForHR(hr);
+
 
                 pinTeeInput = DsFindPin.ByDirection(DX.SmartTee, PinDirection.Input, 0);
                 pinTeePreview = DsFindPin.ByName(DX.SmartTee, "Preview");
@@ -1272,9 +1329,11 @@ namespace Camera_NET
                 DsError.ThrowExceptionForHR(hr);
                 
                 // Connect the capture-pin of tee splitter to the renderer
-               hr = DX.FilterGraph.Connect(pinSourceAudio, pinAudioCapture);
-               DsError.ThrowExceptionForHR(hr);
-                
+                hr = DX.FilterGraph.Connect(pinSourceAudio, pinAudioCapture);
+                DsError.ThrowExceptionForHR(hr);
+
+               // DX.FilterGraph.SetDefaultSyncSource();
+
             }
             catch
             {
