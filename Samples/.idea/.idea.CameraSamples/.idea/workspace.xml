@@ -2,29 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d0d91e1-b75e-4402-9c5e-1f1f5bd148c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Camera_Net/Internal/AMVideoProcessor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Camera_Net/Camera_NET.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../Camera_Net/Camera_NET.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Camera_Net/Internal/Direct3DMixing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Camera_Net/Internal/Direct3DMixing.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Camera_Net/Internal/DirectXInterfaces.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Camera_Net/Internal/DirectXInterfaces.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Camera_Net/Public/Camera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Camera_Net/Public/Camera.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Camera_Net/Public/CameraControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Camera_Net/Public/CameraControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Camera_Net/Public/Resolution.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../Camera_Net/Public/Resolution.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CameraControlSample/CameraControlSample.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CameraControlSample/CameraControlSample.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CameraControlSample/FormCameraControlSample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CameraControlSample/FormCameraControlSample.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CameraControlSample/Properties/Resources.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CameraControlSample/Properties/Resources.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CameraControlSample/Properties/Settings.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CameraControlSample/Properties/Settings.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CameraControlSample/app.config" beforeDir="false" afterPath="$PROJECT_DIR$/CameraControlSample/app.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CameraControlTool/CameraControlTool.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/CameraControlTool/CameraControlTool.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CameraControlTool/Properties/Resources.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CameraControlTool/Properties/Resources.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CameraControlTool/Properties/Settings.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/CameraControlTool/Properties/Settings.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CameraControlTool/app.config" beforeDir="false" afterPath="$PROJECT_DIR$/CameraControlTool/app.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerySimple/Properties/Resources.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VerySimple/Properties/Resources.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerySimple/Properties/Settings.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VerySimple/Properties/Settings.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerySimple/VerySimple.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/VerySimple/VerySimple.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerySimple/app.config" beforeDir="false" afterPath="$PROJECT_DIR$/VerySimple/app.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerySimpleWpf/App.config" beforeDir="false" afterPath="$PROJECT_DIR$/VerySimpleWpf/App.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerySimpleWpf/Properties/Resources.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VerySimpleWpf/Properties/Resources.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerySimpleWpf/Properties/Settings.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VerySimpleWpf/Properties/Settings.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/VerySimpleWpf/VerySimpleWpf.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/VerySimpleWpf/VerySimpleWpf.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CameraSamples/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CameraSamples/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CameraSamples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CameraSamples/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,366 +20,366 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../Camera_Net/Public/Camera.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-49">
-              <caret line="1025" column="12" selection-start-line="1025" selection-start-column="12" selection-end-line="1025" selection-end-column="12" />
+            <state relative-caret-position="-194">
+              <caret line="1395" column="76" selection-start-line="1395" selection-start-column="76" selection-end-line="1395" selection-end-column="76" />
               <folding>
-                <marker date="1547880116968" expanded="false" signature="0:779" ph="License" />
-                <marker date="1547880116968" expanded="true" signature="17:767" ph="/* Camera_NET - Camera wrapper for directshow for .NET ... */" />
-                <marker date="1547880116968" expanded="true" signature="787:831" ph="..." />
-                <marker date="1547880116968" expanded="true" signature="881:87576" ph="{...}" />
-                <marker date="1547880116968" expanded="false" signature="888:1368" ph="Using directives" />
-                <marker date="1547880116968" expanded="false" signature="924:1341" ph="..." />
-                <marker date="1547880116968" expanded="true" signature="1374:1590" ph="/// The Camera class is an main class that is a wrapper for video device. ... " />
-                <marker date="1547880116968" expanded="true" signature="1628:87574" ph="{...}" />
-                <marker date="1547880116968" expanded="false" signature="1724:4653" ph="Private members" />
-                <marker date="1547880116968" expanded="true" signature="1757:1899" ph="/// Private field. Use the public property &lt;see cref=&quot;HostingControl&quot;/&gt; for access to this value. ... " />
-                <marker date="1547880116968" expanded="true" signature="1957:2092" ph="/// Private field. Use the public property &lt;see cref=&quot;Moniker&quot;/&gt; for access to this value. ... " />
-                <marker date="1547880116968" expanded="true" signature="2144:2282" ph="/// Private field. Use the public property &lt;see cref=&quot;Resolution&quot;/&gt; for access to this value. ... " />
-                <marker date="1547880116968" expanded="true" signature="2339:2481" ph="/// Private field. Use the public property &lt;see cref=&quot;ResolutionList&quot;/&gt; for access to this value. ... " />
-                <marker date="1547880116968" expanded="true" signature="2562:2702" ph="/// Private field. Use the public property &lt;see cref=&quot;MixerEnabled&quot;/&gt; for access to this value. ... " />
-                <marker date="1547880116968" expanded="true" signature="2757:2898" ph="/// Private field. Use the public property &lt;see cref=&quot;GDIAlphaValue&quot;/&gt; for access to this value. ... " />
-                <marker date="1547880116968" expanded="true" signature="2954:3097" ph="/// Private field. Use the public property &lt;see cref=&quot;OutputVideoSize&quot;/&gt; for access to this value. ... " />
-                <marker date="1547880116968" expanded="true" signature="3146:3287" ph="/// Private field. Use the public property &lt;see cref=&quot;OverlayBitmap&quot;/&gt; for access to this value. ... " />
-                <marker date="1547880116968" expanded="true" signature="3343:3482" ph="/// Private field. Use the public property &lt;see cref=&quot;GDIColorKey&quot;/&gt; for access to this value. ... " />
-                <marker date="1547880116968" expanded="true" signature="3543:3681" ph="/// Private field. Use the public property &lt;see cref=&quot;VideoInput&quot;/&gt; for access to this value. ... " />
-                <marker date="1547880116968" expanded="true" signature="3813:3962" ph="/// Private field. Use the public property &lt;see cref=&quot;DirectShowLogFilepath&quot;/&gt; for access to this value. ... " />
-                <marker date="1547880116968" expanded="true" signature="4034:4128" ph="/// Private field for DirectShow log file handle. ... " />
-                <marker date="1547880116968" expanded="true" signature="4446:4580" ph="/// Private field. Use the public property &lt;see cref=&quot;UseGDI&quot;/&gt; for access to this value. ... " />
-                <marker date="1547880116968" expanded="false" signature="4744:9105" ph="Internal stuff" />
-                <marker date="1547880116968" expanded="true" signature="4776:4867" ph="/// Private field. DirectXInterfaces instance. ... " />
-                <marker date="1547880116968" expanded="true" signature="4962:5079" ph="/// Private field. Direct3D mixing helper. It's created only when needed ... " />
-                <marker date="1547880116968" expanded="true" signature="5162:5253" ph="/// Private field. Was the graph built or not. ... " />
-                <marker date="1547880116968" expanded="true" signature="5309:5427" ph="/// Private field. Were handlers added or not. Needed to remove delegates ... " />
-                <marker date="1547880116968" expanded="true" signature="5484:5576" ph="/// Private field. Was mixer image used or not. ... " />
-                <marker date="1547880116968" expanded="true" signature="5637:5731" ph="/// Private field. SampleGrabber helper (wrapper) ... " />
-                <marker date="1547880116968" expanded="true" signature="5826:5951" ph="/// Private field. DsROTEntry allows to &quot;Connect to remote graph&quot; from GraphEdit ... " />
-                <marker date="1547880116968" expanded="true" signature="6009:6298" ph="/// Internal. Displays a property page for a filter ... " />
-                <marker date="1547880116968" expanded="true" signature="6391:6464" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="6544:6614" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="6705:9085" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="6976:7468" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="7248:7430" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="7559:8077" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="7962:8063" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="8133:8464" ph="{...}" />
-                <marker date="1547880116968" expanded="false" signature="9196:14978" ph="Public properties" />
-                <marker date="1547880116968" expanded="true" signature="9239:9344" ph="/// Gets a control that is used for hosting camera's output. ... " />
-                <marker date="1547880116968" expanded="true" signature="9382:9446" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="9456:9552" ph="/// Gets a camera moniker (device identification). ... " />
-                <marker date="1547880116968" expanded="true" signature="9584:9641" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="9651:9793" ph="/// Gets or sets a resolution of camera's output. ... " />
-                <marker date="1547880116968" expanded="true" signature="9830:10185" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="9896:10175" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="10195:10305" ph="/// Gets a list of available resolutions (in RGB format). ... " />
-                <marker date="1547880116968" expanded="true" signature="10353:10417" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="10427:10674" ph="/// Gets or sets a value that determines whether or not the image mixer is enabled for camera output. ... " />
-                <marker date="1547880116968" expanded="true" signature="10707:10890" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="10776:10880" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="10900:10980" ph="/// Gets or sets a GDI Alpha value. ... " />
-                <marker date="1547880116968" expanded="true" signature="11015:11122" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="11132:11263" ph="/// Gets a size of video output. ... " />
-                <marker date="1547880116968" expanded="true" signature="11299:11364" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="11374:11532" ph="/// Gets or sets a RGB overlay bitmap used for GDI operations. ... " />
-                <marker date="1547880116968" expanded="true" signature="11568:11827" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="11637:11817" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="11727:11803" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="11837:11988" ph="/// Gets or sets a color used as ColorKey for GDI operations. ... " />
-                <marker date="1547880116968" expanded="true" signature="12021:12231" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="12088:12221" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="12241:12422" ph="/// Gets a value that determines whether or not the crossbar is available for selected camera. ... " />
-                <marker date="1547880116968" expanded="true" signature="12460:12530" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="12540:12690" ph="/// Gets or sets a video input of camera (via crossbar). ... " />
-                <marker date="1547880116968" expanded="true" signature="12727:13316" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="12753:12817" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="12833:13306" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="13126:13292" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="13353:13944" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="13379:13443" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="13459:13934" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="13752:13920" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="13953:14093" ph="/// Log file path for directshow (used in BuildGraph) ... " />
-                <marker date="1547880116968" expanded="true" signature="14137:14383" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="14163:14238" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="14254:14373" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="14416:14662" ph="/// Gets a value that determines whether GDI or Direct3D is used for drawing over mixer image. ... " />
-                <marker date="1547880116968" expanded="true" signature="14689:14935" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="14751:14925" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="14835:14911" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="15069:15317" ph="Events" />
-                <marker date="1547880116968" expanded="true" signature="15093:15239" ph="/// Subscribe to this event to handle changing of size of video output &lt;see cref=&quot;OutputVideoSize&quot;/&gt;. ... " />
-                <marker date="1547880116968" expanded="false" signature="15408:17504" ph="Public Static functions" />
-                <marker date="1547880116968" expanded="true" signature="15449:15773" ph="/// Returns Moniker (device identification) of camera from device index. ... " />
-                <marker date="1547880116968" expanded="true" signature="15839:16247" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="16072:16187" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="16257:16544" ph="/// Returns available resolutions with RGB color system for device moniker ... " />
-                <marker date="1547880116968" expanded="true" signature="16617:17484" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="16907:17213" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="17233:17432" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="17595:31924" ph="Public member functions" />
-                <marker date="1547880116968" expanded="false" signature="17636:20848" ph="Create, Initialize and Dispose/Close" />
-                <marker date="1547880116968" expanded="true" signature="17690:17790" ph="/// Default constructor for &lt;see cref=&quot;Camera&quot;/&gt; class. ... " />
-                <marker date="1547880116968" expanded="true" signature="17814:17834" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="17844:18219" ph="/// Initializes camera and connects it to HostingControl and Moniker. ... " />
-                <marker date="1547880116968" expanded="true" signature="18286:18811" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="18667:18782" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="18821:18923" ph="/// Destructor (disposer) for &lt;see cref=&quot;Camera&quot;/&gt; class. ... " />
-                <marker date="1547880116968" expanded="true" signature="18941:18984" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="18994:19111" ph="/// Dispose of &lt;see cref=&quot;IDisposable&quot;/&gt; for &lt;see cref=&quot;Camera&quot;/&gt; class. ... " />
-                <marker date="1547880116968" expanded="true" signature="19141:19185" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="19195:19291" ph="/// Close and dispose all camera and DirectX stuff. ... " />
-                <marker date="1547880116968" expanded="true" signature="19322:20828" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="19425:19495" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="19528:19593" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="19665:19960" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="19699:19832" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="19869:19946" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="19994:20056" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="20166:20226" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="20329:20452" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="20698:20811" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="20858:24911" ph="Graph: Build, Run, Stop" />
-                <marker date="1547880116968" expanded="true" signature="20901:20988" ph="/// Builds DirectShow graph for rendering. ... " />
-                <marker date="1547880116968" expanded="true" signature="21021:22546" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="21084:22255" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="22286:22352" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="22376:22460" ph="/* Double check to make sure we aren't releasing something ... */" />
-                <marker date="1547880116968" expanded="true" signature="22555:22640" ph="/// Runs DirectShow graph for rendering. ... " />
-                <marker date="1547880116968" expanded="true" signature="22671:23267" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="22694:23078" ph="/* var graph_guilder = (ICaptureGraphBuilder2)new CaptureGraphBuilder2(); ... */" />
-                <marker date="1547880116968" expanded="true" signature="23119:23256" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="23299:24577" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="23509:23578" ph="/* AddFilter_Renderer(); ... */" />
-                <marker date="1547880116968" expanded="true" signature="24433:24566" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="24587:24673" ph="/// Stops DirectShow graph for rendering. ... " />
-                <marker date="1547880116968" expanded="true" signature="24705:24892" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="24756:24882" ph="{...}" />
-                <marker date="1547880116968" expanded="false" signature="24921:27606" ph="Property pages (various settings dialogs)" />
-                <marker date="1547880116968" expanded="true" signature="24980:25289" ph="/// Displays property page for device. ... " />
-                <marker date="1547880116968" expanded="true" signature="25379:25836" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="25846:26100" ph="/// Displays property page for crossbar if it's available. ... " />
-                <marker date="1547880116968" expanded="true" signature="26167:26436" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="26446:26640" ph="/// Displays property page for capture filter. ... " />
-                <marker date="1547880116968" expanded="true" signature="26712:26800" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="26810:27009" ph="/// Displays property page for filter's pin output. ... " />
-                <marker date="1547880116968" expanded="true" signature="27083:27585" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="27152:27349" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="27379:27430" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="27450:27575" ph="{...}" />
-                <marker date="1547880116968" expanded="false" signature="27616:28977" ph="TV Mode" />
-                <marker date="1547880116968" expanded="true" signature="27641:27793" ph="/// Sets TV Mode for device. ... " />
-                <marker date="1547880116968" expanded="true" signature="27849:28229" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="28239:28384" ph="/// Gets TV Mode of device. ... " />
-                <marker date="1547880116968" expanded="true" signature="28431:28957" ph="{...}" />
-                <marker date="1547880116968" expanded="false" signature="28987:31904" ph="Spanshot (screenshots) frame" />
-                <marker date="1547880116968" expanded="true" signature="29033:29254" ph="/// Make snapshot of output image. Slow, but includes all graph's effects. ... " />
-                <marker date="1547880116968" expanded="true" signature="29298:31401" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="29565:31041" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="29756:31027" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="30039:30604" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="31072:31256" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="31109:31218" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="31276:31357" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="31411:31630" ph="/// Make snapshot of source image. Much faster than SnapshotOutputImage. ... " />
-                <marker date="1547880116968" expanded="true" signature="31674:31884" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="32015:87487" ph="Private members" />
-                <marker date="1547880116968" expanded="true" signature="32048:48476" ph="Graph building stuff" />
-                <marker date="1547880116968" expanded="true" signature="32094:32176" ph="/// Adds filters to DirectShow graph. ... " />
-                <marker date="1547880116968" expanded="true" signature="32224:32455" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="32465:32549" ph="/// Sets the Framerate, and video size. ... " />
-                <marker date="1547880116968" expanded="true" signature="32588:33241" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="32691:33017" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="32722:32838" ph="/* Collect pins ... */" />
-                <marker date="1547880116968" expanded="true" signature="33048:33086" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="33106:33231" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="33251:33579" ph="/// Checks if AMMediaType's resolution is appropriate for desired resolution. ... " />
-                <marker date="1547880116968" expanded="true" signature="33685:34372" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="34092:34150" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="34278:34336" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="34382:34721" ph="/// Get resoltuin from if AMMediaType's resolution is appropriate for resolution_desired ... " />
-                <marker date="1547880116968" expanded="true" signature="34805:35135" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="35146:35290" ph="/// Get bit count for mediatype ... " />
-                <marker date="1547880116968" expanded="true" signature="35367:35588" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="35598:35755" ph="/// Check if bit count is appropriate for us ... " />
-                <marker date="1547880116968" expanded="true" signature="35822:36029" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="35935:35992" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="36039:36306" ph="/// Analyze AMMediaType during enumeration and decide if it's good choice for us. ... " />
-                <marker date="1547880116968" expanded="true" signature="36475:37608" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="36695:36891" ph="/* --------------------------------------------------- ... */" />
-                <marker date="1547880116968" expanded="true" signature="37315:37447" ph="/* --------------------------------------------------- ... */" />
-                <marker date="1547880116968" expanded="true" signature="37618:37856" ph="/// Sets parameters for source capture pin. ... " />
-                <marker date="1547880116968" expanded="true" signature="37954:42058" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="38270:41750" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="38391:38576" ph="/* ------------------------------------------------------------------------- ... */" />
-                <marker date="1547880116968" expanded="true" signature="38937:40894" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="39234:39576" ph="/* NOTE: we could use VideoStreamConfigCaps.InputSize or something like that to get resolution, but it's deprecat ... */" />
-                <marker date="1547880116968" expanded="true" signature="39899:40804" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="39962:40301" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="40330:40782" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="40494:40756" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="40946:41736" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="41089:41357" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="41382:41718" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="41781:41819" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="41839:42048" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="42068:42139" ph="/// Connects pins of graph ... " />
-                <marker date="1547880116968" expanded="true" signature="42188:48448" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="42727:47746" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="42758:42874" ph="/* Collect pins ... */" />
-                <marker date="1547880116968" expanded="true" signature="44082:44746" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="44124:44592" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="44440:44548" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="44639:44727" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="46523:46685" ph="/* Connect source to tee splitter ... */" />
-                <marker date="1547880116968" expanded="true" signature="46986:47471" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="47777:47815" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="47835:48438" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="48486:57502" ph="Filters" />
-                <marker date="1547880116968" expanded="true" signature="48511:48605" ph="/// Adds video source filter to the filter graph. ... " />
-                <marker date="1547880116968" expanded="true" signature="48645:48960" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="48970:49060" ph="/// Adds crossbar filter to the filter graph. ... " />
-                <marker date="1547880116968" expanded="true" signature="49102:51010" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="49125:49530" ph="/* NOTE: It's hard to add suitable crossbar manually ... */" />
-                <marker date="1547880116968" expanded="true" signature="49661:50392" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="50278:50377" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="50412:50529" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="50610:51000" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="51020:51117" ph="/// Adds VMR9 (renderer) filter to the filter graph. ... " />
-                <marker date="1547880116968" expanded="true" signature="51159:52109" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="51365:51618" ph="/* var typeFromClsid = Type.GetTypeFromCLSID(new Guid(&quot;{FA10746C-9B63-4B6C-BC49-FC300EA5F256}&quot;)); ... */" />
-                <marker date="1547880116968" expanded="true" signature="52162:53844" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="52751:53683" ph="/* DsError.ThrowExceptionForHR(hr); ... */" />
-                <marker date="1547880116968" expanded="true" signature="53854:54000" ph="/// Does stuff for renderer (set video size, resolution, etc.) after graph building before rendering. ... " />
-                <marker date="1547880116968" expanded="true" signature="54044:54639" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="54165:54629" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="54649:54748" ph="/// Configures VMR9 to run in hosting control and etc. ... " />
-                <marker date="1547880116968" expanded="true" signature="54800:55944" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="55401:55565" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="55743:55883" ph="/* Add delegates for Windowless operations ... */" />
-                <marker date="1547880116968" expanded="true" signature="55962:56073" ph="/// Adds tee splitter filter to split for grabber and for capture. ... " />
-                <marker date="1547880116968" expanded="true" signature="56118:56477" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="56495:56585" ph="/// Adds SampleGrabber for screenshot making. ... " />
-                <marker date="1547880116968" expanded="true" signature="56632:57241" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="57251:57367" ph="/// Does stuff for SampleGrabber after graph building before rendering. ... " />
-                <marker date="1547880116968" expanded="true" signature="57416:57482" ph="{...}" />
-                <marker date="1547880116968" expanded="false" signature="57512:64784" ph="Crossbar helpers" />
-                <marker date="1547880116968" expanded="true" signature="57554:57832" ph="/// Gets type of input connected to video output of the crossbar. ... " />
-                <marker date="1547880116968" expanded="true" signature="57905:59427" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="58146:59385" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="58397:58766" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="58624:58748" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="58814:59371" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="59050:59353" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="59437:59730" ph="/// Sets type of input connected to video output of the crossbar. ... " />
-                <marker date="1547880116968" expanded="true" signature="59820:62247" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="59949:62237" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="60149:62223" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="60473:60878" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="60716:60856" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="60997:61404" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="61243:61382" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="61531:62062" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="61646:61853" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="61882:62040" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="62087:62204" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="62337:64764" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="62466:64754" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="62666:64740" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="62990:63395" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="63233:63373" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="63514:63921" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="63760:63899" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="64048:64579" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="64163:64370" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="64399:64557" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="64604:64721" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="64794:70776" ph="Internal event handlers for HostingControl and system" />
-                <marker date="1547880116968" expanded="true" signature="64865:64999" ph="/// Adds event handlers for hosting control. ... " />
-                <marker date="1547880116968" expanded="true" signature="65034:65686" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="65695:65832" ph="/// Removes event handlers for hosting control. ... " />
-                <marker date="1547880116968" expanded="true" signature="65870:66472" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="66482:66617" ph="/// Handler of Paint event of HostingControl. ... " />
-                <marker date="1547880116968" expanded="true" signature="66692:67969" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="66875:67959" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="66959:67125" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="67196:67837" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="67235:67521" ph="/* Catch com-expection VFW_E_BUFFER_NOTSET (0x8004020c) in RepaintVideo() and ignore it ... */" />
-                <marker date="1547880116968" expanded="true" signature="67587:67677" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="67702:67802" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="67861:67945" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="67979:68125" ph="/// Handler of Resize and Move events of HostingControl. ... " />
-                <marker date="1547880116968" expanded="true" signature="68200:69212" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="68709:68788" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="68824:69202" ph="/* Get the bitmap with alpha transparency ... */" />
-                <marker date="1547880116968" expanded="true" signature="69291:70315" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="69812:69891" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="69927:70305" ph="/* Get the bitmap with alpha transparency ... */" />
-                <marker date="1547880116968" expanded="true" signature="70324:70420" ph="/// Handler of SystemEvents.DisplaySettingsChanged. ... " />
-                <marker date="1547880116968" expanded="true" signature="70505:70756" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="70653:70746" ph="{...}" />
-                <marker date="1547880116968" expanded="false" signature="70786:75328" ph="Resolution lists" />
-                <marker date="1547880116968" expanded="true" signature="70820:71041" ph="/// Gets available resolutions (which are appropriate for us) for capture filter. ... " />
-                <marker date="1547880116968" expanded="true" signature="71130:71942" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="71238:71582" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="71354:71502" ph="/* pRaw = DsFindPin.ByCategory(captureFilter, PinCategory.Capture, 0); ... */" />
-                <marker date="1547880116968" expanded="true" signature="71613:71774" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="71654:71760" ph="/* resolution_list = new ResolutionList(); ... */" />
-                <marker date="1547880116968" expanded="true" signature="71794:71895" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="71952:72092" ph="/// Free media type if needed. ... " />
-                <marker date="1547880116968" expanded="true" signature="72162:72323" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="72333:72492" ph="/// Free SCC (it's not used but required for GetStreamCaps()). ... " />
-                <marker date="1547880116968" expanded="true" signature="72551:72706" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="72717:72976" ph="/// Gets available resolutions (which are appropriate for us) for capture pin (PinCategory.Capture). ... " />
-                <marker date="1547880116968" expanded="true" signature="73054:75308" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="73175:73253" ph="/* ResolutionsAvailable.Clear(); ... */" />
-                <marker date="1547880116968" expanded="true" signature="73417:75023" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="73531:73716" ph="/* ------------------------------------------------------------------------- ... */" />
-                <marker date="1547880116968" expanded="true" signature="74077:75009" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="74329:74671" ph="/* NOTE: we could use VideoStreamConfigCaps.InputSize or something like that to get resolution, but it's deprecat ... */" />
-                <marker date="1547880116968" expanded="true" signature="74756:74894" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="75054:75092" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="75112:75256" ph="{...}" />
-                <marker date="1547880116968" expanded="false" signature="75346:78799" ph="Coorinate convertions" />
-                <marker date="1547880116968" expanded="true" signature="75385:75731" ph="/* Information: coordinate types: ... */" />
-                <marker date="1547880116968" expanded="true" signature="75741:75955" ph="/// Converts window coordinates to normalized. ... " />
-                <marker date="1547880116968" expanded="true" signature="76008:76342" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="76352:76527" ph="/// Gets Video Rect in pixels (float values of pixels). ... " />
-                <marker date="1547880116968" expanded="true" signature="76573:77102" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="77112:77297" ph="/// Sets camera output rect (zooms to selected rect). ... " />
-                <marker date="1547880116968" expanded="true" signature="77348:78779" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="78364:78723" ph="/* NormalizedRect rect = new NormalizedRect(-1, -1, 2, 2); ... */" />
-                <marker date="1547880116968" expanded="true" signature="78809:83212" ph="Private Helpers" />
-                <marker date="1547880116968" expanded="true" signature="78842:78920" ph="/// Open log file for DirectShow. ... " />
-                <marker date="1547880116968" expanded="true" signature="78966:80127" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="79191:79243" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="79667:79847" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="80137:80216" ph="/// Close log file for DirectShow. ... " />
-                <marker date="1547880116968" expanded="true" signature="80262:80703" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="80288:80523" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="80346:80442" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="80554:80592" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="80612:80692" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="80713:80842" ph="/// Releases COM object ... " />
-                <marker date="1547880116968" expanded="true" signature="80903:81027" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="80942:81017" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="81037:81134" ph="/// Updates output of video size from HostingControl ... " />
-                <marker date="1547880116968" expanded="true" signature="81179:83192" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="81434:81563" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="81828:81927" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="81982:82080" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="82294:82708" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="82725:83142" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="83222:87106" ph="Bitmap Mixer (image overlay)" />
-                <marker date="1547880116968" expanded="true" signature="83339:83600" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="83442:83516" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="83641:87086" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="83784:84465" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="84107:84178" ph="/* Disable them ... */" />
-                <marker date="1547880116968" expanded="true" signature="84506:84696" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="84537:84658" ph="/* ignore it. Bitmap can be null ... */" />
-                <marker date="1547880116968" expanded="true" signature="84697:87035" ph="/* ##if USE_D3D ... */" />
-                <marker date="1547880116968" expanded="false" signature="87116:87456" ph="For Direct3D mixer mode only" />
-                <marker date="1547880116968" expanded="true" signature="87215:87430" ph="{...}" />
-                <marker date="1547880116968" expanded="true" signature="87267:87352" ph="{...}" />
+                <marker date="1547892309851" expanded="false" signature="0:779" ph="License" />
+                <marker date="1547892309851" expanded="true" signature="17:767" ph="/* Camera_NET - Camera wrapper for directshow for .NET ... */" />
+                <marker date="1547892309851" expanded="true" signature="787:886" ph="..." />
+                <marker date="1547892309851" expanded="true" signature="908:88330" ph="{...}" />
+                <marker date="1547892309851" expanded="false" signature="915:1395" ph="Using directives" />
+                <marker date="1547892309851" expanded="false" signature="951:1368" ph="..." />
+                <marker date="1547892309851" expanded="true" signature="1401:1617" ph="/// The Camera class is an main class that is a wrapper for video device. ... " />
+                <marker date="1547892309851" expanded="true" signature="1655:88328" ph="{...}" />
+                <marker date="1547892309851" expanded="false" signature="1751:4680" ph="Private members" />
+                <marker date="1547892309851" expanded="true" signature="1784:1926" ph="/// Private field. Use the public property &lt;see cref=&quot;HostingControl&quot;/&gt; for access to this value. ... " />
+                <marker date="1547892309851" expanded="true" signature="1984:2119" ph="/// Private field. Use the public property &lt;see cref=&quot;Moniker&quot;/&gt; for access to this value. ... " />
+                <marker date="1547892309851" expanded="true" signature="2171:2309" ph="/// Private field. Use the public property &lt;see cref=&quot;Resolution&quot;/&gt; for access to this value. ... " />
+                <marker date="1547892309851" expanded="true" signature="2366:2508" ph="/// Private field. Use the public property &lt;see cref=&quot;ResolutionList&quot;/&gt; for access to this value. ... " />
+                <marker date="1547892309851" expanded="true" signature="2589:2729" ph="/// Private field. Use the public property &lt;see cref=&quot;MixerEnabled&quot;/&gt; for access to this value. ... " />
+                <marker date="1547892309851" expanded="true" signature="2784:2925" ph="/// Private field. Use the public property &lt;see cref=&quot;GDIAlphaValue&quot;/&gt; for access to this value. ... " />
+                <marker date="1547892309851" expanded="true" signature="2981:3124" ph="/// Private field. Use the public property &lt;see cref=&quot;OutputVideoSize&quot;/&gt; for access to this value. ... " />
+                <marker date="1547892309851" expanded="true" signature="3173:3314" ph="/// Private field. Use the public property &lt;see cref=&quot;OverlayBitmap&quot;/&gt; for access to this value. ... " />
+                <marker date="1547892309851" expanded="true" signature="3370:3509" ph="/// Private field. Use the public property &lt;see cref=&quot;GDIColorKey&quot;/&gt; for access to this value. ... " />
+                <marker date="1547892309851" expanded="true" signature="3570:3708" ph="/// Private field. Use the public property &lt;see cref=&quot;VideoInput&quot;/&gt; for access to this value. ... " />
+                <marker date="1547892309851" expanded="true" signature="3840:3989" ph="/// Private field. Use the public property &lt;see cref=&quot;DirectShowLogFilepath&quot;/&gt; for access to this value. ... " />
+                <marker date="1547892309851" expanded="true" signature="4061:4155" ph="/// Private field for DirectShow log file handle. ... " />
+                <marker date="1547892309851" expanded="true" signature="4473:4607" ph="/// Private field. Use the public property &lt;see cref=&quot;UseGDI&quot;/&gt; for access to this value. ... " />
+                <marker date="1547892309851" expanded="false" signature="4771:9132" ph="Internal stuff" />
+                <marker date="1547892309851" expanded="true" signature="4803:4894" ph="/// Private field. DirectXInterfaces instance. ... " />
+                <marker date="1547892309851" expanded="true" signature="4989:5106" ph="/// Private field. Direct3D mixing helper. It's created only when needed ... " />
+                <marker date="1547892309851" expanded="true" signature="5189:5280" ph="/// Private field. Was the graph built or not. ... " />
+                <marker date="1547892309851" expanded="true" signature="5336:5454" ph="/// Private field. Were handlers added or not. Needed to remove delegates ... " />
+                <marker date="1547892309851" expanded="true" signature="5511:5603" ph="/// Private field. Was mixer image used or not. ... " />
+                <marker date="1547892309851" expanded="true" signature="5664:5758" ph="/// Private field. SampleGrabber helper (wrapper) ... " />
+                <marker date="1547892309851" expanded="true" signature="5853:5978" ph="/// Private field. DsROTEntry allows to &quot;Connect to remote graph&quot; from GraphEdit ... " />
+                <marker date="1547892309851" expanded="true" signature="6036:6325" ph="/// Internal. Displays a property page for a filter ... " />
+                <marker date="1547892309851" expanded="true" signature="6418:6491" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="6571:6641" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="6732:9112" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="7003:7495" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="7275:7457" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="7586:8104" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="7989:8090" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="8160:8491" ph="{...}" />
+                <marker date="1547892309851" expanded="false" signature="9223:15005" ph="Public properties" />
+                <marker date="1547892309851" expanded="true" signature="9266:9371" ph="/// Gets a control that is used for hosting camera's output. ... " />
+                <marker date="1547892309851" expanded="true" signature="9409:9473" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="9483:9579" ph="/// Gets a camera moniker (device identification). ... " />
+                <marker date="1547892309851" expanded="true" signature="9611:9668" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="9678:9820" ph="/// Gets or sets a resolution of camera's output. ... " />
+                <marker date="1547892309851" expanded="true" signature="9857:10212" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="9923:10202" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="10222:10332" ph="/// Gets a list of available resolutions (in RGB format). ... " />
+                <marker date="1547892309851" expanded="true" signature="10380:10444" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="10454:10701" ph="/// Gets or sets a value that determines whether or not the image mixer is enabled for camera output. ... " />
+                <marker date="1547892309851" expanded="true" signature="10734:10917" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="10803:10907" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="10927:11007" ph="/// Gets or sets a GDI Alpha value. ... " />
+                <marker date="1547892309851" expanded="true" signature="11042:11149" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="11159:11290" ph="/// Gets a size of video output. ... " />
+                <marker date="1547892309851" expanded="true" signature="11326:11391" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="11401:11559" ph="/// Gets or sets a RGB overlay bitmap used for GDI operations. ... " />
+                <marker date="1547892309851" expanded="true" signature="11595:11854" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="11664:11844" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="11754:11830" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="11864:12015" ph="/// Gets or sets a color used as ColorKey for GDI operations. ... " />
+                <marker date="1547892309851" expanded="true" signature="12048:12258" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="12115:12248" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="12268:12449" ph="/// Gets a value that determines whether or not the crossbar is available for selected camera. ... " />
+                <marker date="1547892309851" expanded="true" signature="12487:12557" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="12567:12717" ph="/// Gets or sets a video input of camera (via crossbar). ... " />
+                <marker date="1547892309851" expanded="true" signature="12754:13343" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="12780:12844" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="12860:13333" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="13153:13319" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="13380:13971" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="13406:13470" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="13486:13961" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="13779:13947" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="13980:14120" ph="/// Log file path for directshow (used in BuildGraph) ... " />
+                <marker date="1547892309851" expanded="true" signature="14164:14410" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="14190:14265" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="14281:14400" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="14443:14689" ph="/// Gets a value that determines whether GDI or Direct3D is used for drawing over mixer image. ... " />
+                <marker date="1547892309851" expanded="true" signature="14716:14962" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="14778:14952" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="14862:14938" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="15096:15344" ph="Events" />
+                <marker date="1547892309851" expanded="true" signature="15120:15266" ph="/// Subscribe to this event to handle changing of size of video output &lt;see cref=&quot;OutputVideoSize&quot;/&gt;. ... " />
+                <marker date="1547892309851" expanded="false" signature="15435:17531" ph="Public Static functions" />
+                <marker date="1547892309851" expanded="true" signature="15476:15800" ph="/// Returns Moniker (device identification) of camera from device index. ... " />
+                <marker date="1547892309851" expanded="true" signature="15866:16274" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="16099:16214" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="16284:16571" ph="/// Returns available resolutions with RGB color system for device moniker ... " />
+                <marker date="1547892309851" expanded="true" signature="16644:17511" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="16934:17240" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="17260:17459" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="17622:31951" ph="Public member functions" />
+                <marker date="1547892309851" expanded="false" signature="17663:20875" ph="Create, Initialize and Dispose/Close" />
+                <marker date="1547892309851" expanded="true" signature="17717:17817" ph="/// Default constructor for &lt;see cref=&quot;Camera&quot;/&gt; class. ... " />
+                <marker date="1547892309851" expanded="true" signature="17841:17861" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="17871:18246" ph="/// Initializes camera and connects it to HostingControl and Moniker. ... " />
+                <marker date="1547892309851" expanded="true" signature="18313:18838" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="18694:18809" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="18848:18950" ph="/// Destructor (disposer) for &lt;see cref=&quot;Camera&quot;/&gt; class. ... " />
+                <marker date="1547892309851" expanded="true" signature="18968:19011" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="19021:19138" ph="/// Dispose of &lt;see cref=&quot;IDisposable&quot;/&gt; for &lt;see cref=&quot;Camera&quot;/&gt; class. ... " />
+                <marker date="1547892309851" expanded="true" signature="19168:19212" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="19222:19318" ph="/// Close and dispose all camera and DirectX stuff. ... " />
+                <marker date="1547892309851" expanded="true" signature="19349:20855" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="19452:19522" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="19555:19620" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="19692:19987" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="19726:19859" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="19896:19973" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="20021:20083" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="20193:20253" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="20356:20479" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="20725:20838" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="20885:24938" ph="Graph: Build, Run, Stop" />
+                <marker date="1547892309851" expanded="true" signature="20928:21015" ph="/// Builds DirectShow graph for rendering. ... " />
+                <marker date="1547892309851" expanded="true" signature="21048:22573" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="21111:22282" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="22313:22379" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="22403:22487" ph="/* Double check to make sure we aren't releasing something ... */" />
+                <marker date="1547892309851" expanded="true" signature="22582:22667" ph="/// Runs DirectShow graph for rendering. ... " />
+                <marker date="1547892309851" expanded="true" signature="22698:23294" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="22721:23105" ph="/* var graph_guilder = (ICaptureGraphBuilder2)new CaptureGraphBuilder2(); ... */" />
+                <marker date="1547892309851" expanded="true" signature="23146:23283" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="23326:24604" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="23536:23605" ph="/* AddFilter_Renderer(); ... */" />
+                <marker date="1547892309851" expanded="true" signature="24460:24593" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="24614:24700" ph="/// Stops DirectShow graph for rendering. ... " />
+                <marker date="1547892309851" expanded="true" signature="24732:24919" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="24783:24909" ph="{...}" />
+                <marker date="1547892309851" expanded="false" signature="24948:27633" ph="Property pages (various settings dialogs)" />
+                <marker date="1547892309851" expanded="true" signature="25007:25316" ph="/// Displays property page for device. ... " />
+                <marker date="1547892309851" expanded="true" signature="25406:25863" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="25873:26127" ph="/// Displays property page for crossbar if it's available. ... " />
+                <marker date="1547892309851" expanded="true" signature="26194:26463" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="26473:26667" ph="/// Displays property page for capture filter. ... " />
+                <marker date="1547892309851" expanded="true" signature="26739:26827" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="26837:27036" ph="/// Displays property page for filter's pin output. ... " />
+                <marker date="1547892309851" expanded="true" signature="27110:27612" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="27179:27376" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="27406:27457" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="27477:27602" ph="{...}" />
+                <marker date="1547892309851" expanded="false" signature="27643:29004" ph="TV Mode" />
+                <marker date="1547892309851" expanded="true" signature="27668:27820" ph="/// Sets TV Mode for device. ... " />
+                <marker date="1547892309851" expanded="true" signature="27876:28256" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="28266:28411" ph="/// Gets TV Mode of device. ... " />
+                <marker date="1547892309851" expanded="true" signature="28458:28984" ph="{...}" />
+                <marker date="1547892309851" expanded="false" signature="29014:31931" ph="Spanshot (screenshots) frame" />
+                <marker date="1547892309851" expanded="true" signature="29060:29281" ph="/// Make snapshot of output image. Slow, but includes all graph's effects. ... " />
+                <marker date="1547892309851" expanded="true" signature="29325:31428" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="29592:31068" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="29783:31054" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="30066:30631" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="31099:31283" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="31136:31245" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="31303:31384" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="31438:31657" ph="/// Make snapshot of source image. Much faster than SnapshotOutputImage. ... " />
+                <marker date="1547892309851" expanded="true" signature="31701:31911" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="32042:88241" ph="Private members" />
+                <marker date="1547892309851" expanded="true" signature="32075:49049" ph="Graph building stuff" />
+                <marker date="1547892309851" expanded="true" signature="32121:32203" ph="/// Adds filters to DirectShow graph. ... " />
+                <marker date="1547892309851" expanded="true" signature="32251:32482" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="32492:32576" ph="/// Sets the Framerate, and video size. ... " />
+                <marker date="1547892309851" expanded="true" signature="32615:33268" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="32718:33044" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="32749:32865" ph="/* Collect pins ... */" />
+                <marker date="1547892309851" expanded="true" signature="33075:33113" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="33133:33258" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="33278:33606" ph="/// Checks if AMMediaType's resolution is appropriate for desired resolution. ... " />
+                <marker date="1547892309851" expanded="true" signature="33712:34399" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="34119:34177" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="34305:34363" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="34409:34748" ph="/// Get resoltuin from if AMMediaType's resolution is appropriate for resolution_desired ... " />
+                <marker date="1547892309851" expanded="true" signature="34832:35162" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="35173:35317" ph="/// Get bit count for mediatype ... " />
+                <marker date="1547892309851" expanded="true" signature="35394:35615" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="35625:35782" ph="/// Check if bit count is appropriate for us ... " />
+                <marker date="1547892309851" expanded="true" signature="35849:36056" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="35962:36019" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="36066:36333" ph="/// Analyze AMMediaType during enumeration and decide if it's good choice for us. ... " />
+                <marker date="1547892309851" expanded="true" signature="36502:37635" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="36722:36918" ph="/* --------------------------------------------------- ... */" />
+                <marker date="1547892309851" expanded="true" signature="37342:37474" ph="/* --------------------------------------------------- ... */" />
+                <marker date="1547892309851" expanded="true" signature="37645:37883" ph="/// Sets parameters for source capture pin. ... " />
+                <marker date="1547892309851" expanded="true" signature="37981:42085" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="38297:41777" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="38418:38603" ph="/* ------------------------------------------------------------------------- ... */" />
+                <marker date="1547892309851" expanded="true" signature="38964:40921" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="39261:39603" ph="/* NOTE: we could use VideoStreamConfigCaps.InputSize or something like that to get resolution, but it's deprecat ... */" />
+                <marker date="1547892309851" expanded="true" signature="39926:40831" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="39989:40328" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="40357:40809" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="40521:40783" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="40973:41763" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="41116:41384" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="41409:41745" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="41808:41846" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="41866:42075" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="42095:42166" ph="/// Connects pins of graph ... " />
+                <marker date="1547892309851" expanded="true" signature="42215:49021" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="42851:48319" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="42882:42998" ph="/* Collect pins ... */" />
+                <marker date="1547892309851" expanded="true" signature="44514:45178" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="44556:45024" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="44872:44980" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="45071:45159" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="46955:47117" ph="/* Connect source to tee splitter ... */" />
+                <marker date="1547892309851" expanded="true" signature="47389:48044" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="48350:48388" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="48408:49011" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="49059:58256" ph="Filters" />
+                <marker date="1547892309851" expanded="true" signature="49084:49178" ph="/// Adds video source filter to the filter graph. ... " />
+                <marker date="1547892309851" expanded="true" signature="49218:49533" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="49543:49633" ph="/// Adds crossbar filter to the filter graph. ... " />
+                <marker date="1547892309851" expanded="true" signature="49675:51583" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="49698:50103" ph="/* NOTE: It's hard to add suitable crossbar manually ... */" />
+                <marker date="1547892309851" expanded="true" signature="50234:50965" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="50851:50950" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="50985:51102" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="51183:51573" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="51593:51690" ph="/// Adds VMR9 (renderer) filter to the filter graph. ... " />
+                <marker date="1547892309851" expanded="true" signature="51732:52863" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="52003:52256" ph="/* var typeFromClsid = Type.GetTypeFromCLSID(new Guid(&quot;{FA10746C-9B63-4B6C-BC49-FC300EA5F256}&quot;)); ... */" />
+                <marker date="1547892309851" expanded="true" signature="52916:54598" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="53505:54437" ph="/* DsError.ThrowExceptionForHR(hr); ... */" />
+                <marker date="1547892309851" expanded="true" signature="54608:54754" ph="/// Does stuff for renderer (set video size, resolution, etc.) after graph building before rendering. ... " />
+                <marker date="1547892309851" expanded="true" signature="54798:55393" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="54919:55383" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="55403:55502" ph="/// Configures VMR9 to run in hosting control and etc. ... " />
+                <marker date="1547892309851" expanded="true" signature="55554:56698" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="56155:56319" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="56497:56637" ph="/* Add delegates for Windowless operations ... */" />
+                <marker date="1547892309851" expanded="true" signature="56716:56827" ph="/// Adds tee splitter filter to split for grabber and for capture. ... " />
+                <marker date="1547892309851" expanded="true" signature="56872:57231" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="57249:57339" ph="/// Adds SampleGrabber for screenshot making. ... " />
+                <marker date="1547892309851" expanded="true" signature="57386:57995" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="58005:58121" ph="/// Does stuff for SampleGrabber after graph building before rendering. ... " />
+                <marker date="1547892309851" expanded="true" signature="58170:58236" ph="{...}" />
+                <marker date="1547892309851" expanded="false" signature="58266:65538" ph="Crossbar helpers" />
+                <marker date="1547892309851" expanded="true" signature="58308:58586" ph="/// Gets type of input connected to video output of the crossbar. ... " />
+                <marker date="1547892309851" expanded="true" signature="58659:60181" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="58900:60139" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="59151:59520" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="59378:59502" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="59568:60125" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="59804:60107" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="60191:60484" ph="/// Sets type of input connected to video output of the crossbar. ... " />
+                <marker date="1547892309851" expanded="true" signature="60574:63001" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="60703:62991" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="60903:62977" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="61227:61632" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="61470:61610" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="61751:62158" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="61997:62136" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="62285:62816" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="62400:62607" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="62636:62794" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="62841:62958" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="63091:65518" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="63220:65508" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="63420:65494" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="63744:64149" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="63987:64127" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="64268:64675" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="64514:64653" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="64802:65333" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="64917:65124" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="65153:65311" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="65358:65475" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="65548:71530" ph="Internal event handlers for HostingControl and system" />
+                <marker date="1547892309851" expanded="true" signature="65619:65753" ph="/// Adds event handlers for hosting control. ... " />
+                <marker date="1547892309851" expanded="true" signature="65788:66440" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="66449:66586" ph="/// Removes event handlers for hosting control. ... " />
+                <marker date="1547892309851" expanded="true" signature="66624:67226" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="67236:67371" ph="/// Handler of Paint event of HostingControl. ... " />
+                <marker date="1547892309851" expanded="true" signature="67446:68723" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="67629:68713" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="67713:67879" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="67950:68591" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="67989:68275" ph="/* Catch com-expection VFW_E_BUFFER_NOTSET (0x8004020c) in RepaintVideo() and ignore it ... */" />
+                <marker date="1547892309851" expanded="true" signature="68341:68431" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="68456:68556" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="68615:68699" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="68733:68879" ph="/// Handler of Resize and Move events of HostingControl. ... " />
+                <marker date="1547892309851" expanded="true" signature="68954:69966" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="69463:69542" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="69578:69956" ph="/* Get the bitmap with alpha transparency ... */" />
+                <marker date="1547892309851" expanded="true" signature="70045:71069" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="70566:70645" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="70681:71059" ph="/* Get the bitmap with alpha transparency ... */" />
+                <marker date="1547892309851" expanded="true" signature="71078:71174" ph="/// Handler of SystemEvents.DisplaySettingsChanged. ... " />
+                <marker date="1547892309851" expanded="true" signature="71259:71510" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="71407:71500" ph="{...}" />
+                <marker date="1547892309851" expanded="false" signature="71540:76082" ph="Resolution lists" />
+                <marker date="1547892309851" expanded="true" signature="71574:71795" ph="/// Gets available resolutions (which are appropriate for us) for capture filter. ... " />
+                <marker date="1547892309851" expanded="true" signature="71884:72696" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="71992:72336" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="72108:72256" ph="/* pRaw = DsFindPin.ByCategory(captureFilter, PinCategory.Capture, 0); ... */" />
+                <marker date="1547892309851" expanded="true" signature="72367:72528" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="72408:72514" ph="/* resolution_list = new ResolutionList(); ... */" />
+                <marker date="1547892309851" expanded="true" signature="72548:72649" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="72706:72846" ph="/// Free media type if needed. ... " />
+                <marker date="1547892309851" expanded="true" signature="72916:73077" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="73087:73246" ph="/// Free SCC (it's not used but required for GetStreamCaps()). ... " />
+                <marker date="1547892309851" expanded="true" signature="73305:73460" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="73471:73730" ph="/// Gets available resolutions (which are appropriate for us) for capture pin (PinCategory.Capture). ... " />
+                <marker date="1547892309851" expanded="true" signature="73808:76062" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="73929:74007" ph="/* ResolutionsAvailable.Clear(); ... */" />
+                <marker date="1547892309851" expanded="true" signature="74171:75777" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="74285:74470" ph="/* ------------------------------------------------------------------------- ... */" />
+                <marker date="1547892309851" expanded="true" signature="74831:75763" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="75083:75425" ph="/* NOTE: we could use VideoStreamConfigCaps.InputSize or something like that to get resolution, but it's deprecat ... */" />
+                <marker date="1547892309851" expanded="true" signature="75510:75648" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="75808:75846" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="75866:76010" ph="{...}" />
+                <marker date="1547892309851" expanded="false" signature="76100:79553" ph="Coorinate convertions" />
+                <marker date="1547892309851" expanded="true" signature="76139:76485" ph="/* Information: coordinate types: ... */" />
+                <marker date="1547892309851" expanded="true" signature="76495:76709" ph="/// Converts window coordinates to normalized. ... " />
+                <marker date="1547892309851" expanded="true" signature="76762:77096" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="77106:77281" ph="/// Gets Video Rect in pixels (float values of pixels). ... " />
+                <marker date="1547892309851" expanded="true" signature="77327:77856" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="77866:78051" ph="/// Sets camera output rect (zooms to selected rect). ... " />
+                <marker date="1547892309851" expanded="true" signature="78102:79533" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="79118:79477" ph="/* NormalizedRect rect = new NormalizedRect(-1, -1, 2, 2); ... */" />
+                <marker date="1547892309851" expanded="true" signature="79563:83966" ph="Private Helpers" />
+                <marker date="1547892309851" expanded="true" signature="79596:79674" ph="/// Open log file for DirectShow. ... " />
+                <marker date="1547892309851" expanded="true" signature="79720:80881" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="79945:79997" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="80421:80601" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="80891:80970" ph="/// Close log file for DirectShow. ... " />
+                <marker date="1547892309851" expanded="true" signature="81016:81457" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="81042:81277" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="81100:81196" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="81308:81346" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="81366:81446" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="81467:81596" ph="/// Releases COM object ... " />
+                <marker date="1547892309851" expanded="true" signature="81657:81781" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="81696:81771" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="81791:81888" ph="/// Updates output of video size from HostingControl ... " />
+                <marker date="1547892309851" expanded="true" signature="81933:83946" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="82188:82317" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="82582:82681" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="82736:82834" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="83048:83462" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="83479:83896" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="83976:87860" ph="Bitmap Mixer (image overlay)" />
+                <marker date="1547892309851" expanded="true" signature="84093:84354" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="84196:84270" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="84395:87840" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="84538:85219" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="84861:84932" ph="/* Disable them ... */" />
+                <marker date="1547892309851" expanded="true" signature="85260:85450" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="85291:85412" ph="/* ignore it. Bitmap can be null ... */" />
+                <marker date="1547892309851" expanded="true" signature="85451:87789" ph="/* ##if USE_D3D ... */" />
+                <marker date="1547892309851" expanded="false" signature="87870:88210" ph="For Direct3D mixer mode only" />
+                <marker date="1547892309851" expanded="true" signature="87969:88184" ph="{...}" />
+                <marker date="1547892309851" expanded="true" signature="88021:88106" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -819,36 +802,50 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Camera_Net/Internal/DirectXInterfaces.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="110" column="34" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
+            <state relative-caret-position="312">
+              <caret line="61" column="32" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
               <folding>
-                <marker date="1547875320259" expanded="false" signature="0:779" ph="License" />
-                <marker date="1547875320259" expanded="true" signature="17:767" ph="/* Camera_NET - Camera wrapper for directshow for .NET ... */" />
-                <marker date="1547875320259" expanded="true" signature="829:4206" ph="{...}" />
-                <marker date="1547875320259" expanded="false" signature="836:1024" ph="Using directives" />
-                <marker date="1547875320259" expanded="false" signature="872:1008" ph="..." />
-                <marker date="1547875320259" expanded="true" signature="1069:4201" ph="{...}" />
-                <marker date="1547875320259" expanded="true" signature="1084:1187" ph="/// Constructor for &lt;see cref=&quot;DirectXInterfaces&quot;/&gt; class. ... " />
-                <marker date="1547875320259" expanded="true" signature="1222:1274" ph="{...}" />
-                <marker date="1547875320259" expanded="true" signature="1284:1357" ph="/// Graph builder interface. ... " />
-                <marker date="1547875320259" expanded="true" signature="1419:1484" ph="/// IVMRMixerBitmap9 ... " />
-                <marker date="1547875320259" expanded="true" signature="1546:1615" ph="/// VideoMixingRenderer9 ... " />
-                <marker date="1547875320259" expanded="true" signature="1802:1877" ph="/// Crossbar (on some devices) ... " />
-                <marker date="1547875320259" expanded="true" signature="1936:2007" ph="/// IVMRWindowlessControl9 ... " />
-                <marker date="1547875320259" expanded="true" signature="2078:2117" ph="/// &lt;summary&gt; ... " />
-                <marker date="1547875320259" expanded="true" signature="2180:2259" ph="/// Used to grab current snapshots ... " />
-                <marker date="1547875320259" expanded="true" signature="2323:2392" ph="/// VideoMixingRenderer9 ... " />
-                <marker date="1547875320259" expanded="true" signature="2462:2523" ph="/// Tee splitter ... " />
-                <marker date="1547875320259" expanded="true" signature="2629:2692" ph="/// Capture filter ... " />
-                <marker date="1547875320259" expanded="true" signature="2756:2845" ph="/// Closes and releases all used interfaces. ... " />
-                <marker date="1547875320259" expanded="true" signature="2883:4193" ph="{...}" />
-                <marker date="1547875320259" expanded="true" signature="2929:3168" ph="{...}" />
-                <marker date="1547875320259" expanded="true" signature="3205:3324" ph="{...}" />
-                <marker date="1547875320259" expanded="true" signature="3361:3517" ph="{...}" />
-                <marker date="1547875320259" expanded="true" signature="3552:3665" ph="{...}" />
-                <marker date="1547875320259" expanded="true" signature="3705:3872" ph="{...}" />
-                <marker date="1547875320259" expanded="true" signature="3912:4035" ph="{...}" />
-                <marker date="1547875320259" expanded="true" signature="4070:4183" ph="{...}" />
+                <marker date="1547888234312" expanded="false" signature="0:779" ph="License" />
+                <marker date="1547888234312" expanded="true" signature="17:767" ph="/* Camera_NET - Camera wrapper for directshow for .NET ... */" />
+                <marker date="1547888234312" expanded="true" signature="829:4420" ph="{...}" />
+                <marker date="1547888234312" expanded="false" signature="836:1024" ph="Using directives" />
+                <marker date="1547888234312" expanded="false" signature="872:1008" ph="..." />
+                <marker date="1547888234312" expanded="true" signature="1069:4415" ph="{...}" />
+                <marker date="1547888234312" expanded="true" signature="1084:1187" ph="/// Constructor for &lt;see cref=&quot;DirectXInterfaces&quot;/&gt; class. ... " />
+                <marker date="1547888234312" expanded="true" signature="1222:1274" ph="{...}" />
+                <marker date="1547888234312" expanded="true" signature="1284:1357" ph="/// Graph builder interface. ... " />
+                <marker date="1547888234312" expanded="true" signature="1419:1484" ph="/// IVMRMixerBitmap9 ... " />
+                <marker date="1547888234312" expanded="true" signature="1546:1615" ph="/// VideoMixingRenderer9 ... " />
+                <marker date="1547888234312" expanded="true" signature="1852:1927" ph="/// Crossbar (on some devices) ... " />
+                <marker date="1547888234312" expanded="true" signature="1986:2057" ph="/// IVMRWindowlessControl9 ... " />
+                <marker date="1547888234312" expanded="true" signature="2128:2167" ph="/// &lt;summary&gt; ... " />
+                <marker date="1547888234312" expanded="true" signature="2230:2309" ph="/// Used to grab current snapshots ... " />
+                <marker date="1547888234312" expanded="true" signature="2373:2442" ph="/// VideoMixingRenderer9 ... " />
+                <marker date="1547888234312" expanded="true" signature="2512:2573" ph="/// Tee splitter ... " />
+                <marker date="1547888234312" expanded="true" signature="2679:2742" ph="/// Capture filter ... " />
+                <marker date="1547888234312" expanded="true" signature="2806:2895" ph="/// Closes and releases all used interfaces. ... " />
+                <marker date="1547888234312" expanded="true" signature="2933:4407" ph="{...}" />
+                <marker date="1547888234312" expanded="true" signature="2979:3218" ph="{...}" />
+                <marker date="1547888234312" expanded="true" signature="3253:3370" ph="{...}" />
+                <marker date="1547888234312" expanded="true" signature="3419:3538" ph="{...}" />
+                <marker date="1547888234312" expanded="true" signature="3575:3731" ph="{...}" />
+                <marker date="1547888234312" expanded="true" signature="3766:3879" ph="{...}" />
+                <marker date="1547888234312" expanded="true" signature="3919:4086" ph="{...}" />
+                <marker date="1547888234312" expanded="true" signature="4126:4249" ph="{...}" />
+                <marker date="1547888234312" expanded="true" signature="4284:4397" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Camera_Net/Internal/AMVideoProcessor.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="33" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="33" />
+              <folding>
+                <marker date="1547891336526" expanded="true" signature="68:185" ph="{...}" />
+                <marker date="1547891336526" expanded="true" signature="171:183" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -1182,7 +1179,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>addf</find>
       <find>SyncSource</find>
       <find>smarttee</find>
       <find>GDI</find>
@@ -1196,7 +1192,6 @@
       <find>resolution</find>
       <find>connect</find>
       <find>savem</find>
-      <find>connectp</find>
       <find>device(</find>
       <find>render</find>
       <find>videom</find>
@@ -1208,10 +1203,12 @@
       <find>debug</find>
       <find>remote</find>
       <find>WindowlessCtrl</find>
-      <find>conne</find>
       <find>setvideo</find>
       <find>PostActions_SampleGrabber</find>
       <find>connectpin</find>
+      <find>new vid</find>
+      <find>connectp</find>
+      <find>conne</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -1244,6 +1241,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42073FCF-9EFD-4A92-A6F0-A4CC94099FE3/7a/cae0cee5/Type.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7ED7F370-C914-402F-ADA9-25B5DCE44B5D/a8/f16b916a/IMFVideoDisplayControlExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CameraControlSample/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../Camera_Net/Internal/AMVideoProcessor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CameraControlSample/FormCameraControlSample.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/42073FCF-9EFD-4A92-A6F0-A4CC94099FE3/fb/e8f6b045/Activator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/metadata/4F0814FC-9A23-4B2A-88B0-22B0B0F31D37/67/26f94943/MediaFoundation.cs" root0="SKIP_HIGHLIGHTING" />
@@ -1262,6 +1260,8 @@
         <option value="$PROJECT_DIR$/../Camera_Net/Public/CameraControl.cs" />
         <option value="$PROJECT_DIR$/CameraControlSample/FormCameraControlSample.cs" />
         <option value="$PROJECT_DIR$/../Camera_Net/Internal/DirectXInterfaces.cs" />
+        <option value="$PROJECT_DIR$/../Camera_Net/Internal/AMVideoProcess.cs" />
+        <option value="$PROJECT_DIR$/../Camera_Net/Internal/AMVideoProcessor.cs" />
         <option value="$PROJECT_DIR$/../Camera_Net/Public/Camera.cs" />
       </list>
     </option>
@@ -1274,7 +1274,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="AssemblyExplorer" proportions="" version="1">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -1284,6 +1284,23 @@
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="CameraSamples" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="CameraSamples" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Camera_NET" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="CameraSamples" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Camera_NET" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Internal" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="CameraSamples" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Camera_NET" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Public" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
@@ -1383,12 +1400,12 @@
       <workItem from="1547485284101" duration="3583000" />
       <workItem from="1547602415385" duration="9243000" />
       <workItem from="1547810754763" duration="6744000" />
-      <workItem from="1547865535151" duration="8719000" />
+      <workItem from="1547865535151" duration="11030000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82579000" />
+    <option name="totallyTimeSpent" value="84890000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1448,29 +1465,29 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/../Camera_Net/Public/Camera.cs</url>
-          <line>1402</line>
+          <line>1411</line>
           <properties documentPath="$PROJECT_DIR$/../Camera_Net/Public/Camera.cs" initialLine="1391">
             <startOffsets>
-              <option value="47795" />
+              <option value="48368" />
             </startOffsets>
             <endOffsets>
-              <option value="47801" />
+              <option value="48374" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/../Camera_Net/Public/Camera.cs</url>
-          <line>1476</line>
-          <properties documentPath="$PROJECT_DIR$/../Camera_Net/Public/Camera.cs" initialLine="1476">
+          <line>1307</line>
+          <properties documentPath="$PROJECT_DIR$/../Camera_Net/Public/Camera.cs" initialLine="1307">
             <startOffsets>
-              <option value="50317" />
+              <option value="43620" />
             </startOffsets>
             <endOffsets>
-              <option value="50359" />
+              <option value="43652" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="14" />
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -2982,42 +2999,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Camera_Net/Internal/DirectXInterfaces.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="110" column="34" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
-          <folding>
-            <marker date="1547875320259" expanded="false" signature="0:779" ph="License" />
-            <marker date="1547875320259" expanded="true" signature="17:767" ph="/* Camera_NET - Camera wrapper for directshow for .NET ... */" />
-            <marker date="1547875320259" expanded="true" signature="829:4206" ph="{...}" />
-            <marker date="1547875320259" expanded="false" signature="836:1024" ph="Using directives" />
-            <marker date="1547875320259" expanded="false" signature="872:1008" ph="..." />
-            <marker date="1547875320259" expanded="true" signature="1069:4201" ph="{...}" />
-            <marker date="1547875320259" expanded="true" signature="1084:1187" ph="/// Constructor for &lt;see cref=&quot;DirectXInterfaces&quot;/&gt; class. ... " />
-            <marker date="1547875320259" expanded="true" signature="1222:1274" ph="{...}" />
-            <marker date="1547875320259" expanded="true" signature="1284:1357" ph="/// Graph builder interface. ... " />
-            <marker date="1547875320259" expanded="true" signature="1419:1484" ph="/// IVMRMixerBitmap9 ... " />
-            <marker date="1547875320259" expanded="true" signature="1546:1615" ph="/// VideoMixingRenderer9 ... " />
-            <marker date="1547875320259" expanded="true" signature="1802:1877" ph="/// Crossbar (on some devices) ... " />
-            <marker date="1547875320259" expanded="true" signature="1936:2007" ph="/// IVMRWindowlessControl9 ... " />
-            <marker date="1547875320259" expanded="true" signature="2078:2117" ph="/// &lt;summary&gt; ... " />
-            <marker date="1547875320259" expanded="true" signature="2180:2259" ph="/// Used to grab current snapshots ... " />
-            <marker date="1547875320259" expanded="true" signature="2323:2392" ph="/// VideoMixingRenderer9 ... " />
-            <marker date="1547875320259" expanded="true" signature="2462:2523" ph="/// Tee splitter ... " />
-            <marker date="1547875320259" expanded="true" signature="2629:2692" ph="/// Capture filter ... " />
-            <marker date="1547875320259" expanded="true" signature="2756:2845" ph="/// Closes and releases all used interfaces. ... " />
-            <marker date="1547875320259" expanded="true" signature="2883:4193" ph="{...}" />
-            <marker date="1547875320259" expanded="true" signature="2929:3168" ph="{...}" />
-            <marker date="1547875320259" expanded="true" signature="3205:3324" ph="{...}" />
-            <marker date="1547875320259" expanded="true" signature="3361:3517" ph="{...}" />
-            <marker date="1547875320259" expanded="true" signature="3552:3665" ph="{...}" />
-            <marker date="1547875320259" expanded="true" signature="3705:3872" ph="{...}" />
-            <marker date="1547875320259" expanded="true" signature="3912:4035" ph="{...}" />
-            <marker date="1547875320259" expanded="true" signature="4070:4183" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Camera_Net/Public/CameraControl.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -3135,368 +3116,416 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../Camera_Net/Internal/AMVideoProcessor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="33" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="33" />
+          <folding>
+            <marker date="1547891336526" expanded="true" signature="68:185" ph="{...}" />
+            <marker date="1547891336526" expanded="true" signature="171:183" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Camera_Net/Internal/DirectXInterfaces.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="61" column="32" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+          <folding>
+            <marker date="1547888234312" expanded="false" signature="0:779" ph="License" />
+            <marker date="1547888234312" expanded="true" signature="17:767" ph="/* Camera_NET - Camera wrapper for directshow for .NET ... */" />
+            <marker date="1547888234312" expanded="true" signature="829:4420" ph="{...}" />
+            <marker date="1547888234312" expanded="false" signature="836:1024" ph="Using directives" />
+            <marker date="1547888234312" expanded="false" signature="872:1008" ph="..." />
+            <marker date="1547888234312" expanded="true" signature="1069:4415" ph="{...}" />
+            <marker date="1547888234312" expanded="true" signature="1084:1187" ph="/// Constructor for &lt;see cref=&quot;DirectXInterfaces&quot;/&gt; class. ... " />
+            <marker date="1547888234312" expanded="true" signature="1222:1274" ph="{...}" />
+            <marker date="1547888234312" expanded="true" signature="1284:1357" ph="/// Graph builder interface. ... " />
+            <marker date="1547888234312" expanded="true" signature="1419:1484" ph="/// IVMRMixerBitmap9 ... " />
+            <marker date="1547888234312" expanded="true" signature="1546:1615" ph="/// VideoMixingRenderer9 ... " />
+            <marker date="1547888234312" expanded="true" signature="1852:1927" ph="/// Crossbar (on some devices) ... " />
+            <marker date="1547888234312" expanded="true" signature="1986:2057" ph="/// IVMRWindowlessControl9 ... " />
+            <marker date="1547888234312" expanded="true" signature="2128:2167" ph="/// &lt;summary&gt; ... " />
+            <marker date="1547888234312" expanded="true" signature="2230:2309" ph="/// Used to grab current snapshots ... " />
+            <marker date="1547888234312" expanded="true" signature="2373:2442" ph="/// VideoMixingRenderer9 ... " />
+            <marker date="1547888234312" expanded="true" signature="2512:2573" ph="/// Tee splitter ... " />
+            <marker date="1547888234312" expanded="true" signature="2679:2742" ph="/// Capture filter ... " />
+            <marker date="1547888234312" expanded="true" signature="2806:2895" ph="/// Closes and releases all used interfaces. ... " />
+            <marker date="1547888234312" expanded="true" signature="2933:4407" ph="{...}" />
+            <marker date="1547888234312" expanded="true" signature="2979:3218" ph="{...}" />
+            <marker date="1547888234312" expanded="true" signature="3253:3370" ph="{...}" />
+            <marker date="1547888234312" expanded="true" signature="3419:3538" ph="{...}" />
+            <marker date="1547888234312" expanded="true" signature="3575:3731" ph="{...}" />
+            <marker date="1547888234312" expanded="true" signature="3766:3879" ph="{...}" />
+            <marker date="1547888234312" expanded="true" signature="3919:4086" ph="{...}" />
+            <marker date="1547888234312" expanded="true" signature="4126:4249" ph="{...}" />
+            <marker date="1547888234312" expanded="true" signature="4284:4397" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../Camera_Net/Public/Camera.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-49">
-          <caret line="1025" column="12" selection-start-line="1025" selection-start-column="12" selection-end-line="1025" selection-end-column="12" />
+        <state relative-caret-position="-194">
+          <caret line="1395" column="76" selection-start-line="1395" selection-start-column="76" selection-end-line="1395" selection-end-column="76" />
           <folding>
-            <marker date="1547880116968" expanded="false" signature="0:779" ph="License" />
-            <marker date="1547880116968" expanded="true" signature="17:767" ph="/* Camera_NET - Camera wrapper for directshow for .NET ... */" />
-            <marker date="1547880116968" expanded="true" signature="787:831" ph="..." />
-            <marker date="1547880116968" expanded="true" signature="881:87576" ph="{...}" />
-            <marker date="1547880116968" expanded="false" signature="888:1368" ph="Using directives" />
-            <marker date="1547880116968" expanded="false" signature="924:1341" ph="..." />
-            <marker date="1547880116968" expanded="true" signature="1374:1590" ph="/// The Camera class is an main class that is a wrapper for video device. ... " />
-            <marker date="1547880116968" expanded="true" signature="1628:87574" ph="{...}" />
-            <marker date="1547880116968" expanded="false" signature="1724:4653" ph="Private members" />
-            <marker date="1547880116968" expanded="true" signature="1757:1899" ph="/// Private field. Use the public property &lt;see cref=&quot;HostingControl&quot;/&gt; for access to this value. ... " />
-            <marker date="1547880116968" expanded="true" signature="1957:2092" ph="/// Private field. Use the public property &lt;see cref=&quot;Moniker&quot;/&gt; for access to this value. ... " />
-            <marker date="1547880116968" expanded="true" signature="2144:2282" ph="/// Private field. Use the public property &lt;see cref=&quot;Resolution&quot;/&gt; for access to this value. ... " />
-            <marker date="1547880116968" expanded="true" signature="2339:2481" ph="/// Private field. Use the public property &lt;see cref=&quot;ResolutionList&quot;/&gt; for access to this value. ... " />
-            <marker date="1547880116968" expanded="true" signature="2562:2702" ph="/// Private field. Use the public property &lt;see cref=&quot;MixerEnabled&quot;/&gt; for access to this value. ... " />
-            <marker date="1547880116968" expanded="true" signature="2757:2898" ph="/// Private field. Use the public property &lt;see cref=&quot;GDIAlphaValue&quot;/&gt; for access to this value. ... " />
-            <marker date="1547880116968" expanded="true" signature="2954:3097" ph="/// Private field. Use the public property &lt;see cref=&quot;OutputVideoSize&quot;/&gt; for access to this value. ... " />
-            <marker date="1547880116968" expanded="true" signature="3146:3287" ph="/// Private field. Use the public property &lt;see cref=&quot;OverlayBitmap&quot;/&gt; for access to this value. ... " />
-            <marker date="1547880116968" expanded="true" signature="3343:3482" ph="/// Private field. Use the public property &lt;see cref=&quot;GDIColorKey&quot;/&gt; for access to this value. ... " />
-            <marker date="1547880116968" expanded="true" signature="3543:3681" ph="/// Private field. Use the public property &lt;see cref=&quot;VideoInput&quot;/&gt; for access to this value. ... " />
-            <marker date="1547880116968" expanded="true" signature="3813:3962" ph="/// Private field. Use the public property &lt;see cref=&quot;DirectShowLogFilepath&quot;/&gt; for access to this value. ... " />
-            <marker date="1547880116968" expanded="true" signature="4034:4128" ph="/// Private field for DirectShow log file handle. ... " />
-            <marker date="1547880116968" expanded="true" signature="4446:4580" ph="/// Private field. Use the public property &lt;see cref=&quot;UseGDI&quot;/&gt; for access to this value. ... " />
-            <marker date="1547880116968" expanded="false" signature="4744:9105" ph="Internal stuff" />
-            <marker date="1547880116968" expanded="true" signature="4776:4867" ph="/// Private field. DirectXInterfaces instance. ... " />
-            <marker date="1547880116968" expanded="true" signature="4962:5079" ph="/// Private field. Direct3D mixing helper. It's created only when needed ... " />
-            <marker date="1547880116968" expanded="true" signature="5162:5253" ph="/// Private field. Was the graph built or not. ... " />
-            <marker date="1547880116968" expanded="true" signature="5309:5427" ph="/// Private field. Were handlers added or not. Needed to remove delegates ... " />
-            <marker date="1547880116968" expanded="true" signature="5484:5576" ph="/// Private field. Was mixer image used or not. ... " />
-            <marker date="1547880116968" expanded="true" signature="5637:5731" ph="/// Private field. SampleGrabber helper (wrapper) ... " />
-            <marker date="1547880116968" expanded="true" signature="5826:5951" ph="/// Private field. DsROTEntry allows to &quot;Connect to remote graph&quot; from GraphEdit ... " />
-            <marker date="1547880116968" expanded="true" signature="6009:6298" ph="/// Internal. Displays a property page for a filter ... " />
-            <marker date="1547880116968" expanded="true" signature="6391:6464" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="6544:6614" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="6705:9085" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="6976:7468" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="7248:7430" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="7559:8077" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="7962:8063" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="8133:8464" ph="{...}" />
-            <marker date="1547880116968" expanded="false" signature="9196:14978" ph="Public properties" />
-            <marker date="1547880116968" expanded="true" signature="9239:9344" ph="/// Gets a control that is used for hosting camera's output. ... " />
-            <marker date="1547880116968" expanded="true" signature="9382:9446" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="9456:9552" ph="/// Gets a camera moniker (device identification). ... " />
-            <marker date="1547880116968" expanded="true" signature="9584:9641" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="9651:9793" ph="/// Gets or sets a resolution of camera's output. ... " />
-            <marker date="1547880116968" expanded="true" signature="9830:10185" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="9896:10175" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="10195:10305" ph="/// Gets a list of available resolutions (in RGB format). ... " />
-            <marker date="1547880116968" expanded="true" signature="10353:10417" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="10427:10674" ph="/// Gets or sets a value that determines whether or not the image mixer is enabled for camera output. ... " />
-            <marker date="1547880116968" expanded="true" signature="10707:10890" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="10776:10880" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="10900:10980" ph="/// Gets or sets a GDI Alpha value. ... " />
-            <marker date="1547880116968" expanded="true" signature="11015:11122" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="11132:11263" ph="/// Gets a size of video output. ... " />
-            <marker date="1547880116968" expanded="true" signature="11299:11364" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="11374:11532" ph="/// Gets or sets a RGB overlay bitmap used for GDI operations. ... " />
-            <marker date="1547880116968" expanded="true" signature="11568:11827" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="11637:11817" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="11727:11803" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="11837:11988" ph="/// Gets or sets a color used as ColorKey for GDI operations. ... " />
-            <marker date="1547880116968" expanded="true" signature="12021:12231" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="12088:12221" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="12241:12422" ph="/// Gets a value that determines whether or not the crossbar is available for selected camera. ... " />
-            <marker date="1547880116968" expanded="true" signature="12460:12530" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="12540:12690" ph="/// Gets or sets a video input of camera (via crossbar). ... " />
-            <marker date="1547880116968" expanded="true" signature="12727:13316" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="12753:12817" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="12833:13306" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="13126:13292" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="13353:13944" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="13379:13443" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="13459:13934" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="13752:13920" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="13953:14093" ph="/// Log file path for directshow (used in BuildGraph) ... " />
-            <marker date="1547880116968" expanded="true" signature="14137:14383" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="14163:14238" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="14254:14373" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="14416:14662" ph="/// Gets a value that determines whether GDI or Direct3D is used for drawing over mixer image. ... " />
-            <marker date="1547880116968" expanded="true" signature="14689:14935" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="14751:14925" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="14835:14911" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="15069:15317" ph="Events" />
-            <marker date="1547880116968" expanded="true" signature="15093:15239" ph="/// Subscribe to this event to handle changing of size of video output &lt;see cref=&quot;OutputVideoSize&quot;/&gt;. ... " />
-            <marker date="1547880116968" expanded="false" signature="15408:17504" ph="Public Static functions" />
-            <marker date="1547880116968" expanded="true" signature="15449:15773" ph="/// Returns Moniker (device identification) of camera from device index. ... " />
-            <marker date="1547880116968" expanded="true" signature="15839:16247" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="16072:16187" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="16257:16544" ph="/// Returns available resolutions with RGB color system for device moniker ... " />
-            <marker date="1547880116968" expanded="true" signature="16617:17484" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="16907:17213" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="17233:17432" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="17595:31924" ph="Public member functions" />
-            <marker date="1547880116968" expanded="false" signature="17636:20848" ph="Create, Initialize and Dispose/Close" />
-            <marker date="1547880116968" expanded="true" signature="17690:17790" ph="/// Default constructor for &lt;see cref=&quot;Camera&quot;/&gt; class. ... " />
-            <marker date="1547880116968" expanded="true" signature="17814:17834" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="17844:18219" ph="/// Initializes camera and connects it to HostingControl and Moniker. ... " />
-            <marker date="1547880116968" expanded="true" signature="18286:18811" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="18667:18782" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="18821:18923" ph="/// Destructor (disposer) for &lt;see cref=&quot;Camera&quot;/&gt; class. ... " />
-            <marker date="1547880116968" expanded="true" signature="18941:18984" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="18994:19111" ph="/// Dispose of &lt;see cref=&quot;IDisposable&quot;/&gt; for &lt;see cref=&quot;Camera&quot;/&gt; class. ... " />
-            <marker date="1547880116968" expanded="true" signature="19141:19185" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="19195:19291" ph="/// Close and dispose all camera and DirectX stuff. ... " />
-            <marker date="1547880116968" expanded="true" signature="19322:20828" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="19425:19495" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="19528:19593" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="19665:19960" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="19699:19832" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="19869:19946" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="19994:20056" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="20166:20226" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="20329:20452" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="20698:20811" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="20858:24911" ph="Graph: Build, Run, Stop" />
-            <marker date="1547880116968" expanded="true" signature="20901:20988" ph="/// Builds DirectShow graph for rendering. ... " />
-            <marker date="1547880116968" expanded="true" signature="21021:22546" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="21084:22255" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="22286:22352" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="22376:22460" ph="/* Double check to make sure we aren't releasing something ... */" />
-            <marker date="1547880116968" expanded="true" signature="22555:22640" ph="/// Runs DirectShow graph for rendering. ... " />
-            <marker date="1547880116968" expanded="true" signature="22671:23267" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="22694:23078" ph="/* var graph_guilder = (ICaptureGraphBuilder2)new CaptureGraphBuilder2(); ... */" />
-            <marker date="1547880116968" expanded="true" signature="23119:23256" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="23299:24577" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="23509:23578" ph="/* AddFilter_Renderer(); ... */" />
-            <marker date="1547880116968" expanded="true" signature="24433:24566" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="24587:24673" ph="/// Stops DirectShow graph for rendering. ... " />
-            <marker date="1547880116968" expanded="true" signature="24705:24892" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="24756:24882" ph="{...}" />
-            <marker date="1547880116968" expanded="false" signature="24921:27606" ph="Property pages (various settings dialogs)" />
-            <marker date="1547880116968" expanded="true" signature="24980:25289" ph="/// Displays property page for device. ... " />
-            <marker date="1547880116968" expanded="true" signature="25379:25836" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="25846:26100" ph="/// Displays property page for crossbar if it's available. ... " />
-            <marker date="1547880116968" expanded="true" signature="26167:26436" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="26446:26640" ph="/// Displays property page for capture filter. ... " />
-            <marker date="1547880116968" expanded="true" signature="26712:26800" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="26810:27009" ph="/// Displays property page for filter's pin output. ... " />
-            <marker date="1547880116968" expanded="true" signature="27083:27585" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="27152:27349" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="27379:27430" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="27450:27575" ph="{...}" />
-            <marker date="1547880116968" expanded="false" signature="27616:28977" ph="TV Mode" />
-            <marker date="1547880116968" expanded="true" signature="27641:27793" ph="/// Sets TV Mode for device. ... " />
-            <marker date="1547880116968" expanded="true" signature="27849:28229" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="28239:28384" ph="/// Gets TV Mode of device. ... " />
-            <marker date="1547880116968" expanded="true" signature="28431:28957" ph="{...}" />
-            <marker date="1547880116968" expanded="false" signature="28987:31904" ph="Spanshot (screenshots) frame" />
-            <marker date="1547880116968" expanded="true" signature="29033:29254" ph="/// Make snapshot of output image. Slow, but includes all graph's effects. ... " />
-            <marker date="1547880116968" expanded="true" signature="29298:31401" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="29565:31041" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="29756:31027" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="30039:30604" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="31072:31256" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="31109:31218" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="31276:31357" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="31411:31630" ph="/// Make snapshot of source image. Much faster than SnapshotOutputImage. ... " />
-            <marker date="1547880116968" expanded="true" signature="31674:31884" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="32015:87487" ph="Private members" />
-            <marker date="1547880116968" expanded="true" signature="32048:48476" ph="Graph building stuff" />
-            <marker date="1547880116968" expanded="true" signature="32094:32176" ph="/// Adds filters to DirectShow graph. ... " />
-            <marker date="1547880116968" expanded="true" signature="32224:32455" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="32465:32549" ph="/// Sets the Framerate, and video size. ... " />
-            <marker date="1547880116968" expanded="true" signature="32588:33241" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="32691:33017" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="32722:32838" ph="/* Collect pins ... */" />
-            <marker date="1547880116968" expanded="true" signature="33048:33086" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="33106:33231" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="33251:33579" ph="/// Checks if AMMediaType's resolution is appropriate for desired resolution. ... " />
-            <marker date="1547880116968" expanded="true" signature="33685:34372" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="34092:34150" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="34278:34336" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="34382:34721" ph="/// Get resoltuin from if AMMediaType's resolution is appropriate for resolution_desired ... " />
-            <marker date="1547880116968" expanded="true" signature="34805:35135" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="35146:35290" ph="/// Get bit count for mediatype ... " />
-            <marker date="1547880116968" expanded="true" signature="35367:35588" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="35598:35755" ph="/// Check if bit count is appropriate for us ... " />
-            <marker date="1547880116968" expanded="true" signature="35822:36029" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="35935:35992" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="36039:36306" ph="/// Analyze AMMediaType during enumeration and decide if it's good choice for us. ... " />
-            <marker date="1547880116968" expanded="true" signature="36475:37608" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="36695:36891" ph="/* --------------------------------------------------- ... */" />
-            <marker date="1547880116968" expanded="true" signature="37315:37447" ph="/* --------------------------------------------------- ... */" />
-            <marker date="1547880116968" expanded="true" signature="37618:37856" ph="/// Sets parameters for source capture pin. ... " />
-            <marker date="1547880116968" expanded="true" signature="37954:42058" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="38270:41750" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="38391:38576" ph="/* ------------------------------------------------------------------------- ... */" />
-            <marker date="1547880116968" expanded="true" signature="38937:40894" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="39234:39576" ph="/* NOTE: we could use VideoStreamConfigCaps.InputSize or something like that to get resolution, but it's deprecat ... */" />
-            <marker date="1547880116968" expanded="true" signature="39899:40804" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="39962:40301" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="40330:40782" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="40494:40756" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="40946:41736" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="41089:41357" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="41382:41718" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="41781:41819" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="41839:42048" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="42068:42139" ph="/// Connects pins of graph ... " />
-            <marker date="1547880116968" expanded="true" signature="42188:48448" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="42727:47746" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="42758:42874" ph="/* Collect pins ... */" />
-            <marker date="1547880116968" expanded="true" signature="44082:44746" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="44124:44592" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="44440:44548" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="44639:44727" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="46523:46685" ph="/* Connect source to tee splitter ... */" />
-            <marker date="1547880116968" expanded="true" signature="46986:47471" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="47777:47815" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="47835:48438" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="48486:57502" ph="Filters" />
-            <marker date="1547880116968" expanded="true" signature="48511:48605" ph="/// Adds video source filter to the filter graph. ... " />
-            <marker date="1547880116968" expanded="true" signature="48645:48960" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="48970:49060" ph="/// Adds crossbar filter to the filter graph. ... " />
-            <marker date="1547880116968" expanded="true" signature="49102:51010" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="49125:49530" ph="/* NOTE: It's hard to add suitable crossbar manually ... */" />
-            <marker date="1547880116968" expanded="true" signature="49661:50392" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="50278:50377" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="50412:50529" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="50610:51000" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="51020:51117" ph="/// Adds VMR9 (renderer) filter to the filter graph. ... " />
-            <marker date="1547880116968" expanded="true" signature="51159:52109" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="51365:51618" ph="/* var typeFromClsid = Type.GetTypeFromCLSID(new Guid(&quot;{FA10746C-9B63-4B6C-BC49-FC300EA5F256}&quot;)); ... */" />
-            <marker date="1547880116968" expanded="true" signature="52162:53844" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="52751:53683" ph="/* DsError.ThrowExceptionForHR(hr); ... */" />
-            <marker date="1547880116968" expanded="true" signature="53854:54000" ph="/// Does stuff for renderer (set video size, resolution, etc.) after graph building before rendering. ... " />
-            <marker date="1547880116968" expanded="true" signature="54044:54639" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="54165:54629" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="54649:54748" ph="/// Configures VMR9 to run in hosting control and etc. ... " />
-            <marker date="1547880116968" expanded="true" signature="54800:55944" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="55401:55565" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="55743:55883" ph="/* Add delegates for Windowless operations ... */" />
-            <marker date="1547880116968" expanded="true" signature="55962:56073" ph="/// Adds tee splitter filter to split for grabber and for capture. ... " />
-            <marker date="1547880116968" expanded="true" signature="56118:56477" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="56495:56585" ph="/// Adds SampleGrabber for screenshot making. ... " />
-            <marker date="1547880116968" expanded="true" signature="56632:57241" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="57251:57367" ph="/// Does stuff for SampleGrabber after graph building before rendering. ... " />
-            <marker date="1547880116968" expanded="true" signature="57416:57482" ph="{...}" />
-            <marker date="1547880116968" expanded="false" signature="57512:64784" ph="Crossbar helpers" />
-            <marker date="1547880116968" expanded="true" signature="57554:57832" ph="/// Gets type of input connected to video output of the crossbar. ... " />
-            <marker date="1547880116968" expanded="true" signature="57905:59427" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="58146:59385" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="58397:58766" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="58624:58748" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="58814:59371" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="59050:59353" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="59437:59730" ph="/// Sets type of input connected to video output of the crossbar. ... " />
-            <marker date="1547880116968" expanded="true" signature="59820:62247" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="59949:62237" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="60149:62223" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="60473:60878" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="60716:60856" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="60997:61404" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="61243:61382" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="61531:62062" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="61646:61853" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="61882:62040" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="62087:62204" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="62337:64764" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="62466:64754" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="62666:64740" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="62990:63395" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="63233:63373" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="63514:63921" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="63760:63899" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="64048:64579" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="64163:64370" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="64399:64557" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="64604:64721" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="64794:70776" ph="Internal event handlers for HostingControl and system" />
-            <marker date="1547880116968" expanded="true" signature="64865:64999" ph="/// Adds event handlers for hosting control. ... " />
-            <marker date="1547880116968" expanded="true" signature="65034:65686" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="65695:65832" ph="/// Removes event handlers for hosting control. ... " />
-            <marker date="1547880116968" expanded="true" signature="65870:66472" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="66482:66617" ph="/// Handler of Paint event of HostingControl. ... " />
-            <marker date="1547880116968" expanded="true" signature="66692:67969" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="66875:67959" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="66959:67125" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="67196:67837" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="67235:67521" ph="/* Catch com-expection VFW_E_BUFFER_NOTSET (0x8004020c) in RepaintVideo() and ignore it ... */" />
-            <marker date="1547880116968" expanded="true" signature="67587:67677" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="67702:67802" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="67861:67945" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="67979:68125" ph="/// Handler of Resize and Move events of HostingControl. ... " />
-            <marker date="1547880116968" expanded="true" signature="68200:69212" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="68709:68788" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="68824:69202" ph="/* Get the bitmap with alpha transparency ... */" />
-            <marker date="1547880116968" expanded="true" signature="69291:70315" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="69812:69891" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="69927:70305" ph="/* Get the bitmap with alpha transparency ... */" />
-            <marker date="1547880116968" expanded="true" signature="70324:70420" ph="/// Handler of SystemEvents.DisplaySettingsChanged. ... " />
-            <marker date="1547880116968" expanded="true" signature="70505:70756" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="70653:70746" ph="{...}" />
-            <marker date="1547880116968" expanded="false" signature="70786:75328" ph="Resolution lists" />
-            <marker date="1547880116968" expanded="true" signature="70820:71041" ph="/// Gets available resolutions (which are appropriate for us) for capture filter. ... " />
-            <marker date="1547880116968" expanded="true" signature="71130:71942" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="71238:71582" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="71354:71502" ph="/* pRaw = DsFindPin.ByCategory(captureFilter, PinCategory.Capture, 0); ... */" />
-            <marker date="1547880116968" expanded="true" signature="71613:71774" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="71654:71760" ph="/* resolution_list = new ResolutionList(); ... */" />
-            <marker date="1547880116968" expanded="true" signature="71794:71895" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="71952:72092" ph="/// Free media type if needed. ... " />
-            <marker date="1547880116968" expanded="true" signature="72162:72323" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="72333:72492" ph="/// Free SCC (it's not used but required for GetStreamCaps()). ... " />
-            <marker date="1547880116968" expanded="true" signature="72551:72706" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="72717:72976" ph="/// Gets available resolutions (which are appropriate for us) for capture pin (PinCategory.Capture). ... " />
-            <marker date="1547880116968" expanded="true" signature="73054:75308" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="73175:73253" ph="/* ResolutionsAvailable.Clear(); ... */" />
-            <marker date="1547880116968" expanded="true" signature="73417:75023" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="73531:73716" ph="/* ------------------------------------------------------------------------- ... */" />
-            <marker date="1547880116968" expanded="true" signature="74077:75009" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="74329:74671" ph="/* NOTE: we could use VideoStreamConfigCaps.InputSize or something like that to get resolution, but it's deprecat ... */" />
-            <marker date="1547880116968" expanded="true" signature="74756:74894" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="75054:75092" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="75112:75256" ph="{...}" />
-            <marker date="1547880116968" expanded="false" signature="75346:78799" ph="Coorinate convertions" />
-            <marker date="1547880116968" expanded="true" signature="75385:75731" ph="/* Information: coordinate types: ... */" />
-            <marker date="1547880116968" expanded="true" signature="75741:75955" ph="/// Converts window coordinates to normalized. ... " />
-            <marker date="1547880116968" expanded="true" signature="76008:76342" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="76352:76527" ph="/// Gets Video Rect in pixels (float values of pixels). ... " />
-            <marker date="1547880116968" expanded="true" signature="76573:77102" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="77112:77297" ph="/// Sets camera output rect (zooms to selected rect). ... " />
-            <marker date="1547880116968" expanded="true" signature="77348:78779" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="78364:78723" ph="/* NormalizedRect rect = new NormalizedRect(-1, -1, 2, 2); ... */" />
-            <marker date="1547880116968" expanded="true" signature="78809:83212" ph="Private Helpers" />
-            <marker date="1547880116968" expanded="true" signature="78842:78920" ph="/// Open log file for DirectShow. ... " />
-            <marker date="1547880116968" expanded="true" signature="78966:80127" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="79191:79243" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="79667:79847" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="80137:80216" ph="/// Close log file for DirectShow. ... " />
-            <marker date="1547880116968" expanded="true" signature="80262:80703" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="80288:80523" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="80346:80442" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="80554:80592" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="80612:80692" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="80713:80842" ph="/// Releases COM object ... " />
-            <marker date="1547880116968" expanded="true" signature="80903:81027" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="80942:81017" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="81037:81134" ph="/// Updates output of video size from HostingControl ... " />
-            <marker date="1547880116968" expanded="true" signature="81179:83192" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="81434:81563" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="81828:81927" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="81982:82080" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="82294:82708" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="82725:83142" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="83222:87106" ph="Bitmap Mixer (image overlay)" />
-            <marker date="1547880116968" expanded="true" signature="83339:83600" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="83442:83516" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="83641:87086" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="83784:84465" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="84107:84178" ph="/* Disable them ... */" />
-            <marker date="1547880116968" expanded="true" signature="84506:84696" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="84537:84658" ph="/* ignore it. Bitmap can be null ... */" />
-            <marker date="1547880116968" expanded="true" signature="84697:87035" ph="/* ##if USE_D3D ... */" />
-            <marker date="1547880116968" expanded="false" signature="87116:87456" ph="For Direct3D mixer mode only" />
-            <marker date="1547880116968" expanded="true" signature="87215:87430" ph="{...}" />
-            <marker date="1547880116968" expanded="true" signature="87267:87352" ph="{...}" />
+            <marker date="1547892309851" expanded="false" signature="0:779" ph="License" />
+            <marker date="1547892309851" expanded="true" signature="17:767" ph="/* Camera_NET - Camera wrapper for directshow for .NET ... */" />
+            <marker date="1547892309851" expanded="true" signature="787:886" ph="..." />
+            <marker date="1547892309851" expanded="true" signature="908:88330" ph="{...}" />
+            <marker date="1547892309851" expanded="false" signature="915:1395" ph="Using directives" />
+            <marker date="1547892309851" expanded="false" signature="951:1368" ph="..." />
+            <marker date="1547892309851" expanded="true" signature="1401:1617" ph="/// The Camera class is an main class that is a wrapper for video device. ... " />
+            <marker date="1547892309851" expanded="true" signature="1655:88328" ph="{...}" />
+            <marker date="1547892309851" expanded="false" signature="1751:4680" ph="Private members" />
+            <marker date="1547892309851" expanded="true" signature="1784:1926" ph="/// Private field. Use the public property &lt;see cref=&quot;HostingControl&quot;/&gt; for access to this value. ... " />
+            <marker date="1547892309851" expanded="true" signature="1984:2119" ph="/// Private field. Use the public property &lt;see cref=&quot;Moniker&quot;/&gt; for access to this value. ... " />
+            <marker date="1547892309851" expanded="true" signature="2171:2309" ph="/// Private field. Use the public property &lt;see cref=&quot;Resolution&quot;/&gt; for access to this value. ... " />
+            <marker date="1547892309851" expanded="true" signature="2366:2508" ph="/// Private field. Use the public property &lt;see cref=&quot;ResolutionList&quot;/&gt; for access to this value. ... " />
+            <marker date="1547892309851" expanded="true" signature="2589:2729" ph="/// Private field. Use the public property &lt;see cref=&quot;MixerEnabled&quot;/&gt; for access to this value. ... " />
+            <marker date="1547892309851" expanded="true" signature="2784:2925" ph="/// Private field. Use the public property &lt;see cref=&quot;GDIAlphaValue&quot;/&gt; for access to this value. ... " />
+            <marker date="1547892309851" expanded="true" signature="2981:3124" ph="/// Private field. Use the public property &lt;see cref=&quot;OutputVideoSize&quot;/&gt; for access to this value. ... " />
+            <marker date="1547892309851" expanded="true" signature="3173:3314" ph="/// Private field. Use the public property &lt;see cref=&quot;OverlayBitmap&quot;/&gt; for access to this value. ... " />
+            <marker date="1547892309851" expanded="true" signature="3370:3509" ph="/// Private field. Use the public property &lt;see cref=&quot;GDIColorKey&quot;/&gt; for access to this value. ... " />
+            <marker date="1547892309851" expanded="true" signature="3570:3708" ph="/// Private field. Use the public property &lt;see cref=&quot;VideoInput&quot;/&gt; for access to this value. ... " />
+            <marker date="1547892309851" expanded="true" signature="3840:3989" ph="/// Private field. Use the public property &lt;see cref=&quot;DirectShowLogFilepath&quot;/&gt; for access to this value. ... " />
+            <marker date="1547892309851" expanded="true" signature="4061:4155" ph="/// Private field for DirectShow log file handle. ... " />
+            <marker date="1547892309851" expanded="true" signature="4473:4607" ph="/// Private field. Use the public property &lt;see cref=&quot;UseGDI&quot;/&gt; for access to this value. ... " />
+            <marker date="1547892309851" expanded="false" signature="4771:9132" ph="Internal stuff" />
+            <marker date="1547892309851" expanded="true" signature="4803:4894" ph="/// Private field. DirectXInterfaces instance. ... " />
+            <marker date="1547892309851" expanded="true" signature="4989:5106" ph="/// Private field. Direct3D mixing helper. It's created only when needed ... " />
+            <marker date="1547892309851" expanded="true" signature="5189:5280" ph="/// Private field. Was the graph built or not. ... " />
+            <marker date="1547892309851" expanded="true" signature="5336:5454" ph="/// Private field. Were handlers added or not. Needed to remove delegates ... " />
+            <marker date="1547892309851" expanded="true" signature="5511:5603" ph="/// Private field. Was mixer image used or not. ... " />
+            <marker date="1547892309851" expanded="true" signature="5664:5758" ph="/// Private field. SampleGrabber helper (wrapper) ... " />
+            <marker date="1547892309851" expanded="true" signature="5853:5978" ph="/// Private field. DsROTEntry allows to &quot;Connect to remote graph&quot; from GraphEdit ... " />
+            <marker date="1547892309851" expanded="true" signature="6036:6325" ph="/// Internal. Displays a property page for a filter ... " />
+            <marker date="1547892309851" expanded="true" signature="6418:6491" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="6571:6641" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="6732:9112" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="7003:7495" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="7275:7457" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="7586:8104" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="7989:8090" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="8160:8491" ph="{...}" />
+            <marker date="1547892309851" expanded="false" signature="9223:15005" ph="Public properties" />
+            <marker date="1547892309851" expanded="true" signature="9266:9371" ph="/// Gets a control that is used for hosting camera's output. ... " />
+            <marker date="1547892309851" expanded="true" signature="9409:9473" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="9483:9579" ph="/// Gets a camera moniker (device identification). ... " />
+            <marker date="1547892309851" expanded="true" signature="9611:9668" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="9678:9820" ph="/// Gets or sets a resolution of camera's output. ... " />
+            <marker date="1547892309851" expanded="true" signature="9857:10212" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="9923:10202" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="10222:10332" ph="/// Gets a list of available resolutions (in RGB format). ... " />
+            <marker date="1547892309851" expanded="true" signature="10380:10444" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="10454:10701" ph="/// Gets or sets a value that determines whether or not the image mixer is enabled for camera output. ... " />
+            <marker date="1547892309851" expanded="true" signature="10734:10917" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="10803:10907" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="10927:11007" ph="/// Gets or sets a GDI Alpha value. ... " />
+            <marker date="1547892309851" expanded="true" signature="11042:11149" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="11159:11290" ph="/// Gets a size of video output. ... " />
+            <marker date="1547892309851" expanded="true" signature="11326:11391" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="11401:11559" ph="/// Gets or sets a RGB overlay bitmap used for GDI operations. ... " />
+            <marker date="1547892309851" expanded="true" signature="11595:11854" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="11664:11844" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="11754:11830" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="11864:12015" ph="/// Gets or sets a color used as ColorKey for GDI operations. ... " />
+            <marker date="1547892309851" expanded="true" signature="12048:12258" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="12115:12248" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="12268:12449" ph="/// Gets a value that determines whether or not the crossbar is available for selected camera. ... " />
+            <marker date="1547892309851" expanded="true" signature="12487:12557" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="12567:12717" ph="/// Gets or sets a video input of camera (via crossbar). ... " />
+            <marker date="1547892309851" expanded="true" signature="12754:13343" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="12780:12844" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="12860:13333" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="13153:13319" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="13380:13971" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="13406:13470" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="13486:13961" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="13779:13947" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="13980:14120" ph="/// Log file path for directshow (used in BuildGraph) ... " />
+            <marker date="1547892309851" expanded="true" signature="14164:14410" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="14190:14265" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="14281:14400" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="14443:14689" ph="/// Gets a value that determines whether GDI or Direct3D is used for drawing over mixer image. ... " />
+            <marker date="1547892309851" expanded="true" signature="14716:14962" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="14778:14952" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="14862:14938" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="15096:15344" ph="Events" />
+            <marker date="1547892309851" expanded="true" signature="15120:15266" ph="/// Subscribe to this event to handle changing of size of video output &lt;see cref=&quot;OutputVideoSize&quot;/&gt;. ... " />
+            <marker date="1547892309851" expanded="false" signature="15435:17531" ph="Public Static functions" />
+            <marker date="1547892309851" expanded="true" signature="15476:15800" ph="/// Returns Moniker (device identification) of camera from device index. ... " />
+            <marker date="1547892309851" expanded="true" signature="15866:16274" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="16099:16214" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="16284:16571" ph="/// Returns available resolutions with RGB color system for device moniker ... " />
+            <marker date="1547892309851" expanded="true" signature="16644:17511" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="16934:17240" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="17260:17459" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="17622:31951" ph="Public member functions" />
+            <marker date="1547892309851" expanded="false" signature="17663:20875" ph="Create, Initialize and Dispose/Close" />
+            <marker date="1547892309851" expanded="true" signature="17717:17817" ph="/// Default constructor for &lt;see cref=&quot;Camera&quot;/&gt; class. ... " />
+            <marker date="1547892309851" expanded="true" signature="17841:17861" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="17871:18246" ph="/// Initializes camera and connects it to HostingControl and Moniker. ... " />
+            <marker date="1547892309851" expanded="true" signature="18313:18838" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="18694:18809" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="18848:18950" ph="/// Destructor (disposer) for &lt;see cref=&quot;Camera&quot;/&gt; class. ... " />
+            <marker date="1547892309851" expanded="true" signature="18968:19011" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="19021:19138" ph="/// Dispose of &lt;see cref=&quot;IDisposable&quot;/&gt; for &lt;see cref=&quot;Camera&quot;/&gt; class. ... " />
+            <marker date="1547892309851" expanded="true" signature="19168:19212" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="19222:19318" ph="/// Close and dispose all camera and DirectX stuff. ... " />
+            <marker date="1547892309851" expanded="true" signature="19349:20855" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="19452:19522" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="19555:19620" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="19692:19987" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="19726:19859" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="19896:19973" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="20021:20083" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="20193:20253" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="20356:20479" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="20725:20838" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="20885:24938" ph="Graph: Build, Run, Stop" />
+            <marker date="1547892309851" expanded="true" signature="20928:21015" ph="/// Builds DirectShow graph for rendering. ... " />
+            <marker date="1547892309851" expanded="true" signature="21048:22573" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="21111:22282" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="22313:22379" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="22403:22487" ph="/* Double check to make sure we aren't releasing something ... */" />
+            <marker date="1547892309851" expanded="true" signature="22582:22667" ph="/// Runs DirectShow graph for rendering. ... " />
+            <marker date="1547892309851" expanded="true" signature="22698:23294" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="22721:23105" ph="/* var graph_guilder = (ICaptureGraphBuilder2)new CaptureGraphBuilder2(); ... */" />
+            <marker date="1547892309851" expanded="true" signature="23146:23283" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="23326:24604" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="23536:23605" ph="/* AddFilter_Renderer(); ... */" />
+            <marker date="1547892309851" expanded="true" signature="24460:24593" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="24614:24700" ph="/// Stops DirectShow graph for rendering. ... " />
+            <marker date="1547892309851" expanded="true" signature="24732:24919" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="24783:24909" ph="{...}" />
+            <marker date="1547892309851" expanded="false" signature="24948:27633" ph="Property pages (various settings dialogs)" />
+            <marker date="1547892309851" expanded="true" signature="25007:25316" ph="/// Displays property page for device. ... " />
+            <marker date="1547892309851" expanded="true" signature="25406:25863" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="25873:26127" ph="/// Displays property page for crossbar if it's available. ... " />
+            <marker date="1547892309851" expanded="true" signature="26194:26463" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="26473:26667" ph="/// Displays property page for capture filter. ... " />
+            <marker date="1547892309851" expanded="true" signature="26739:26827" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="26837:27036" ph="/// Displays property page for filter's pin output. ... " />
+            <marker date="1547892309851" expanded="true" signature="27110:27612" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="27179:27376" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="27406:27457" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="27477:27602" ph="{...}" />
+            <marker date="1547892309851" expanded="false" signature="27643:29004" ph="TV Mode" />
+            <marker date="1547892309851" expanded="true" signature="27668:27820" ph="/// Sets TV Mode for device. ... " />
+            <marker date="1547892309851" expanded="true" signature="27876:28256" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="28266:28411" ph="/// Gets TV Mode of device. ... " />
+            <marker date="1547892309851" expanded="true" signature="28458:28984" ph="{...}" />
+            <marker date="1547892309851" expanded="false" signature="29014:31931" ph="Spanshot (screenshots) frame" />
+            <marker date="1547892309851" expanded="true" signature="29060:29281" ph="/// Make snapshot of output image. Slow, but includes all graph's effects. ... " />
+            <marker date="1547892309851" expanded="true" signature="29325:31428" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="29592:31068" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="29783:31054" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="30066:30631" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="31099:31283" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="31136:31245" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="31303:31384" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="31438:31657" ph="/// Make snapshot of source image. Much faster than SnapshotOutputImage. ... " />
+            <marker date="1547892309851" expanded="true" signature="31701:31911" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="32042:88241" ph="Private members" />
+            <marker date="1547892309851" expanded="true" signature="32075:49049" ph="Graph building stuff" />
+            <marker date="1547892309851" expanded="true" signature="32121:32203" ph="/// Adds filters to DirectShow graph. ... " />
+            <marker date="1547892309851" expanded="true" signature="32251:32482" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="32492:32576" ph="/// Sets the Framerate, and video size. ... " />
+            <marker date="1547892309851" expanded="true" signature="32615:33268" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="32718:33044" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="32749:32865" ph="/* Collect pins ... */" />
+            <marker date="1547892309851" expanded="true" signature="33075:33113" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="33133:33258" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="33278:33606" ph="/// Checks if AMMediaType's resolution is appropriate for desired resolution. ... " />
+            <marker date="1547892309851" expanded="true" signature="33712:34399" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="34119:34177" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="34305:34363" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="34409:34748" ph="/// Get resoltuin from if AMMediaType's resolution is appropriate for resolution_desired ... " />
+            <marker date="1547892309851" expanded="true" signature="34832:35162" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="35173:35317" ph="/// Get bit count for mediatype ... " />
+            <marker date="1547892309851" expanded="true" signature="35394:35615" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="35625:35782" ph="/// Check if bit count is appropriate for us ... " />
+            <marker date="1547892309851" expanded="true" signature="35849:36056" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="35962:36019" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="36066:36333" ph="/// Analyze AMMediaType during enumeration and decide if it's good choice for us. ... " />
+            <marker date="1547892309851" expanded="true" signature="36502:37635" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="36722:36918" ph="/* --------------------------------------------------- ... */" />
+            <marker date="1547892309851" expanded="true" signature="37342:37474" ph="/* --------------------------------------------------- ... */" />
+            <marker date="1547892309851" expanded="true" signature="37645:37883" ph="/// Sets parameters for source capture pin. ... " />
+            <marker date="1547892309851" expanded="true" signature="37981:42085" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="38297:41777" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="38418:38603" ph="/* ------------------------------------------------------------------------- ... */" />
+            <marker date="1547892309851" expanded="true" signature="38964:40921" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="39261:39603" ph="/* NOTE: we could use VideoStreamConfigCaps.InputSize or something like that to get resolution, but it's deprecat ... */" />
+            <marker date="1547892309851" expanded="true" signature="39926:40831" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="39989:40328" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="40357:40809" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="40521:40783" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="40973:41763" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="41116:41384" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="41409:41745" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="41808:41846" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="41866:42075" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="42095:42166" ph="/// Connects pins of graph ... " />
+            <marker date="1547892309851" expanded="true" signature="42215:49021" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="42851:48319" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="42882:42998" ph="/* Collect pins ... */" />
+            <marker date="1547892309851" expanded="true" signature="44514:45178" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="44556:45024" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="44872:44980" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="45071:45159" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="46955:47117" ph="/* Connect source to tee splitter ... */" />
+            <marker date="1547892309851" expanded="true" signature="47389:48044" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="48350:48388" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="48408:49011" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="49059:58256" ph="Filters" />
+            <marker date="1547892309851" expanded="true" signature="49084:49178" ph="/// Adds video source filter to the filter graph. ... " />
+            <marker date="1547892309851" expanded="true" signature="49218:49533" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="49543:49633" ph="/// Adds crossbar filter to the filter graph. ... " />
+            <marker date="1547892309851" expanded="true" signature="49675:51583" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="49698:50103" ph="/* NOTE: It's hard to add suitable crossbar manually ... */" />
+            <marker date="1547892309851" expanded="true" signature="50234:50965" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="50851:50950" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="50985:51102" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="51183:51573" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="51593:51690" ph="/// Adds VMR9 (renderer) filter to the filter graph. ... " />
+            <marker date="1547892309851" expanded="true" signature="51732:52863" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="52003:52256" ph="/* var typeFromClsid = Type.GetTypeFromCLSID(new Guid(&quot;{FA10746C-9B63-4B6C-BC49-FC300EA5F256}&quot;)); ... */" />
+            <marker date="1547892309851" expanded="true" signature="52916:54598" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="53505:54437" ph="/* DsError.ThrowExceptionForHR(hr); ... */" />
+            <marker date="1547892309851" expanded="true" signature="54608:54754" ph="/// Does stuff for renderer (set video size, resolution, etc.) after graph building before rendering. ... " />
+            <marker date="1547892309851" expanded="true" signature="54798:55393" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="54919:55383" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="55403:55502" ph="/// Configures VMR9 to run in hosting control and etc. ... " />
+            <marker date="1547892309851" expanded="true" signature="55554:56698" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="56155:56319" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="56497:56637" ph="/* Add delegates for Windowless operations ... */" />
+            <marker date="1547892309851" expanded="true" signature="56716:56827" ph="/// Adds tee splitter filter to split for grabber and for capture. ... " />
+            <marker date="1547892309851" expanded="true" signature="56872:57231" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="57249:57339" ph="/// Adds SampleGrabber for screenshot making. ... " />
+            <marker date="1547892309851" expanded="true" signature="57386:57995" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="58005:58121" ph="/// Does stuff for SampleGrabber after graph building before rendering. ... " />
+            <marker date="1547892309851" expanded="true" signature="58170:58236" ph="{...}" />
+            <marker date="1547892309851" expanded="false" signature="58266:65538" ph="Crossbar helpers" />
+            <marker date="1547892309851" expanded="true" signature="58308:58586" ph="/// Gets type of input connected to video output of the crossbar. ... " />
+            <marker date="1547892309851" expanded="true" signature="58659:60181" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="58900:60139" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="59151:59520" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="59378:59502" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="59568:60125" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="59804:60107" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="60191:60484" ph="/// Sets type of input connected to video output of the crossbar. ... " />
+            <marker date="1547892309851" expanded="true" signature="60574:63001" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="60703:62991" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="60903:62977" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="61227:61632" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="61470:61610" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="61751:62158" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="61997:62136" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="62285:62816" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="62400:62607" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="62636:62794" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="62841:62958" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="63091:65518" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="63220:65508" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="63420:65494" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="63744:64149" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="63987:64127" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="64268:64675" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="64514:64653" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="64802:65333" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="64917:65124" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="65153:65311" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="65358:65475" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="65548:71530" ph="Internal event handlers for HostingControl and system" />
+            <marker date="1547892309851" expanded="true" signature="65619:65753" ph="/// Adds event handlers for hosting control. ... " />
+            <marker date="1547892309851" expanded="true" signature="65788:66440" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="66449:66586" ph="/// Removes event handlers for hosting control. ... " />
+            <marker date="1547892309851" expanded="true" signature="66624:67226" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="67236:67371" ph="/// Handler of Paint event of HostingControl. ... " />
+            <marker date="1547892309851" expanded="true" signature="67446:68723" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="67629:68713" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="67713:67879" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="67950:68591" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="67989:68275" ph="/* Catch com-expection VFW_E_BUFFER_NOTSET (0x8004020c) in RepaintVideo() and ignore it ... */" />
+            <marker date="1547892309851" expanded="true" signature="68341:68431" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="68456:68556" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="68615:68699" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="68733:68879" ph="/// Handler of Resize and Move events of HostingControl. ... " />
+            <marker date="1547892309851" expanded="true" signature="68954:69966" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="69463:69542" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="69578:69956" ph="/* Get the bitmap with alpha transparency ... */" />
+            <marker date="1547892309851" expanded="true" signature="70045:71069" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="70566:70645" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="70681:71059" ph="/* Get the bitmap with alpha transparency ... */" />
+            <marker date="1547892309851" expanded="true" signature="71078:71174" ph="/// Handler of SystemEvents.DisplaySettingsChanged. ... " />
+            <marker date="1547892309851" expanded="true" signature="71259:71510" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="71407:71500" ph="{...}" />
+            <marker date="1547892309851" expanded="false" signature="71540:76082" ph="Resolution lists" />
+            <marker date="1547892309851" expanded="true" signature="71574:71795" ph="/// Gets available resolutions (which are appropriate for us) for capture filter. ... " />
+            <marker date="1547892309851" expanded="true" signature="71884:72696" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="71992:72336" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="72108:72256" ph="/* pRaw = DsFindPin.ByCategory(captureFilter, PinCategory.Capture, 0); ... */" />
+            <marker date="1547892309851" expanded="true" signature="72367:72528" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="72408:72514" ph="/* resolution_list = new ResolutionList(); ... */" />
+            <marker date="1547892309851" expanded="true" signature="72548:72649" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="72706:72846" ph="/// Free media type if needed. ... " />
+            <marker date="1547892309851" expanded="true" signature="72916:73077" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="73087:73246" ph="/// Free SCC (it's not used but required for GetStreamCaps()). ... " />
+            <marker date="1547892309851" expanded="true" signature="73305:73460" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="73471:73730" ph="/// Gets available resolutions (which are appropriate for us) for capture pin (PinCategory.Capture). ... " />
+            <marker date="1547892309851" expanded="true" signature="73808:76062" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="73929:74007" ph="/* ResolutionsAvailable.Clear(); ... */" />
+            <marker date="1547892309851" expanded="true" signature="74171:75777" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="74285:74470" ph="/* ------------------------------------------------------------------------- ... */" />
+            <marker date="1547892309851" expanded="true" signature="74831:75763" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="75083:75425" ph="/* NOTE: we could use VideoStreamConfigCaps.InputSize or something like that to get resolution, but it's deprecat ... */" />
+            <marker date="1547892309851" expanded="true" signature="75510:75648" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="75808:75846" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="75866:76010" ph="{...}" />
+            <marker date="1547892309851" expanded="false" signature="76100:79553" ph="Coorinate convertions" />
+            <marker date="1547892309851" expanded="true" signature="76139:76485" ph="/* Information: coordinate types: ... */" />
+            <marker date="1547892309851" expanded="true" signature="76495:76709" ph="/// Converts window coordinates to normalized. ... " />
+            <marker date="1547892309851" expanded="true" signature="76762:77096" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="77106:77281" ph="/// Gets Video Rect in pixels (float values of pixels). ... " />
+            <marker date="1547892309851" expanded="true" signature="77327:77856" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="77866:78051" ph="/// Sets camera output rect (zooms to selected rect). ... " />
+            <marker date="1547892309851" expanded="true" signature="78102:79533" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="79118:79477" ph="/* NormalizedRect rect = new NormalizedRect(-1, -1, 2, 2); ... */" />
+            <marker date="1547892309851" expanded="true" signature="79563:83966" ph="Private Helpers" />
+            <marker date="1547892309851" expanded="true" signature="79596:79674" ph="/// Open log file for DirectShow. ... " />
+            <marker date="1547892309851" expanded="true" signature="79720:80881" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="79945:79997" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="80421:80601" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="80891:80970" ph="/// Close log file for DirectShow. ... " />
+            <marker date="1547892309851" expanded="true" signature="81016:81457" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="81042:81277" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="81100:81196" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="81308:81346" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="81366:81446" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="81467:81596" ph="/// Releases COM object ... " />
+            <marker date="1547892309851" expanded="true" signature="81657:81781" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="81696:81771" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="81791:81888" ph="/// Updates output of video size from HostingControl ... " />
+            <marker date="1547892309851" expanded="true" signature="81933:83946" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="82188:82317" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="82582:82681" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="82736:82834" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="83048:83462" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="83479:83896" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="83976:87860" ph="Bitmap Mixer (image overlay)" />
+            <marker date="1547892309851" expanded="true" signature="84093:84354" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="84196:84270" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="84395:87840" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="84538:85219" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="84861:84932" ph="/* Disable them ... */" />
+            <marker date="1547892309851" expanded="true" signature="85260:85450" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="85291:85412" ph="/* ignore it. Bitmap can be null ... */" />
+            <marker date="1547892309851" expanded="true" signature="85451:87789" ph="/* ##if USE_D3D ... */" />
+            <marker date="1547892309851" expanded="false" signature="87870:88210" ph="For Direct3D mixer mode only" />
+            <marker date="1547892309851" expanded="true" signature="87969:88184" ph="{...}" />
+            <marker date="1547892309851" expanded="true" signature="88021:88106" ph="{...}" />
           </folding>
         </state>
       </provider>

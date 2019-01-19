@@ -61,6 +61,7 @@ namespace Camera_NET
         /// </summary>
         public IBaseFilter      VMRenderer = null;
         public IBaseFilter      AudioFilter = null;
+        public IBaseFilter      Processer = null;
         public IMFVideoDisplayControl      IMFVideoDisplayControl = null;
 
         /// <summary>
@@ -111,6 +112,11 @@ namespace Camera_NET
                 IMFVideoDisplayControl = null;
                 MixerBitmap = null;
             }
+            if (Processer != null)
+            {
+                Marshal.ReleaseComObject(Processer);
+                AudioFilter = null;
+            }            
             if (AudioFilter != null)
             {
                 Marshal.ReleaseComObject(AudioFilter);

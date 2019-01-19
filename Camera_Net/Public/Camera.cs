@@ -21,6 +21,7 @@ License along with this library. If not, see <http://www.gnu.org/licenses/>.
 
 #endregion
 
+using Camera_NET.Internal;
 using MediaFoundation;
 using  MediaFoundation.EVR;
 using MediaFoundation.Misc;
@@ -1282,6 +1283,8 @@ namespace Camera_NET
             IPin pinInfTeeOutput = null;
             IPin pinInfTeeOutput2 = null;
             IPin pinAudioCapture = null;
+            IPin pinVideoProcessorInput = null;
+            IPin pinVideoProcessorOutput = null;
 
             IPin pinSampleGrabberInput = null;
 
@@ -1295,11 +1298,15 @@ namespace Camera_NET
                // pinSourceCapture = DsFindPin.ByCategory(DX.CaptureFilter, PinCategory.Capture, 0);
                 pinSourceCapture = DsFindPin.ByDirection(DX.CaptureFilter, PinDirection.Output, 0);
                 pinSourceAudio = DsFindPin.ByDirection(DX.CaptureFilter, PinDirection.Output, 1);
+                pinVideoProcessorInput = DsFindPin.ByDirection(DX.Processer, PinDirection.Input, 0);
+                pinVideoProcessorOutput = DsFindPin.ByDirection(DX.Processer, PinDirection.Output, 0);
                 //PinInfo pi = new PinInfo();
 
                 IReferenceClock ss;
                 hr = DX.CaptureFilter.GetSyncSource(out ss);
                 hr = DX.CaptureFilter.SetSyncSource(null);
+                DsError.ThrowExceptionForHR(hr);
+                hr = DX.Processer.SetSyncSource(null);
                 DsError.ThrowExceptionForHR(hr);
                 hr = DX.VMRenderer.SetSyncSource(null);
                 DsError.ThrowExceptionForHR(hr);
@@ -1342,7 +1349,7 @@ namespace Camera_NET
                 Marshal.ReleaseComObject(enumFilters);
 
 
-                int BufferSizeMilliSeconds = -1;
+                int BufferSizeMilliSeconds = 30;
                 IAMStreamConfig sc = (IAMStreamConfig)pinSourceAudio;
                 IAMBufferNegotiation bufferNegotiation = (IAMBufferNegotiation)pinSourceAudio;
                 AMMediaType mt;
@@ -1375,17 +1382,19 @@ namespace Camera_NET
                 //hr = DX.FilterGraph.Connect(pinSourceCapture, pinTeeInput);
                 //DsError.ThrowExceptionForHR(hr);
 
-                if(DX.InfTee != null)hr = DX.FilterGraph.Connect(pinSourceCapture, pinInfTeeInput);
-                if(DX.InfTee != null)DsError.ThrowExceptionForHR(hr);
+                hr = DX.FilterGraph.ConnectDirect(pinSourceCapture, pinInfTeeInput, null);
+                DsError.ThrowExceptionForHR(hr);
+
                 
                // // Connect samplegrabber on preview-pin of tee splitter
 
                if (DX.InfTee != null)
                {
                    // Connect the capture-pin of tee splitter to the renderer
-                   hr = DX.FilterGraph.Connect(pinInfTeeOutput, pinRendererInput);
+                   hr = DX.FilterGraph.ConnectDirect(pinInfTeeOutput, pinVideoProcessorInput,null);
                    DsError.ThrowExceptionForHR(hr);
-
+                   hr = DX.FilterGraph.ConnectDirect(pinVideoProcessorOutput, pinRendererInput,null);
+                   DsError.ThrowExceptionForHR(hr);
                    pinInfTeeOutput2 = DsFindPin.ByDirection(DX.InfTee, PinDirection.Output, 1);
                    hr = DX.FilterGraph.Connect(pinInfTeeOutput2, pinSampleGrabberInput);
                    DsError.ThrowExceptionForHR(hr);
@@ -1506,6 +1515,7 @@ namespace Camera_NET
             int hr = 0;
             int hr2 = 0;
 
+            DX.Processer = (IBaseFilter) new AMVideoProcessor();
             var enhancedVideoRenderer = new EnhancedVideoRenderer();
             DX.VMRenderer = (IBaseFilter)enhancedVideoRenderer;
             //var typeFromClsid = Type.GetTypeFromCLSID(new Guid("{FA10746C-9B63-4B6C-BC49-FC300EA5F256}"));
@@ -1524,6 +1534,8 @@ namespace Camera_NET
             hr2 = DX.FilterGraph.AddFilter(DX.AudioFilter, "Audio Renderer");
             DsError.ThrowExceptionForHR(hr);
             DsError.ThrowExceptionForHR(hr2);
+            hr2 = DX.FilterGraph.AddFilter(DX.Processer, "Processor");
+            DsError.ThrowExceptionForHR(hr);
         }
 
         private void ConfigureEVRInWindowlessMode()

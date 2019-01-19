@@ -7,6 +7,7 @@
       <e p="bin" t="ExcludeRecursive" />
       <e p="Camera_NET.csproj" t="IncludeRecursive" />
       <e p="Internal" t="Include">
+        <e p="AMVideoProcessor.cs" t="Include" />
         <e p="AssemblyInfo.cs" t="Include" />
         <e p="Direct3DMixing.cs" t="Include" />
         <e p="DirectXInterfaces.cs" t="Include" />

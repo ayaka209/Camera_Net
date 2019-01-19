@@ -145,6 +145,7 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Internal\AMVideoProcessor.cs" />
     <Compile Include="Public\CameraControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
