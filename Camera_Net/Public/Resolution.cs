@@ -47,6 +47,11 @@ namespace Camera_NET
         public int Height { set; get; }
 
         /// <summary>
+        /// Height of frame of video output.
+        /// </summary>
+        public String FPS { set; get; }
+        
+        /// <summary>
         /// Constructor for <see cref="Resolution"/> class.
         /// </summary>
         /// <param name="width">Width of frame of video output.</param>
@@ -56,7 +61,17 @@ namespace Camera_NET
             Width = width;
             Height = height;
         }
-
+        /// <summary>
+        /// Constructor for <see cref="Resolution"/> class.
+        /// </summary>
+        /// <param name="width">Width of frame of video output.</param>
+        /// <param name="height">Height of frame of video output.</param>
+        public Resolution(int width, int height, String fps)
+        {
+            Width = width;
+            Height = height;
+            FPS = fps;
+        }
         /// <summary>
         /// Comparator for IComparable<Resolution>
         /// </summary>
@@ -97,7 +112,7 @@ namespace Camera_NET
         public override string ToString()
         {
             // String representation.
-            return Width.ToString() + "x" + Height.ToString();
+            return Width.ToString() + "x" + Height.ToString() + " " + FPS;
         }
 
         /// <summary>
@@ -117,7 +132,7 @@ namespace Camera_NET
                 return false;
 
             if (this.Height != other.Height ||
-                this.Width  != other.Width)
+                this.Width  != other.Width || this.FPS != other.FPS)
                 return false;
 
             return true;

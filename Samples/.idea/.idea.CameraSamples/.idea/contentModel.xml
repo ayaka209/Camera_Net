@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\welov\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\welov\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_CameraSamples.-990392655.00" t="ExcludeRecursive" />
+    <e p="E:\dev\3rd\Camera_Net\Camera_Net" t="IncludeRecursive">
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="Camera_NET.csproj" t="IncludeRecursive" />
+      <e p="Internal" t="Include">
+        <e p="AssemblyInfo.cs" t="Include" />
+        <e p="Direct3DMixing.cs" t="Include" />
+        <e p="DirectXInterfaces.cs" t="Include" />
+        <e p="NativeMethodes.cs" t="Include" />
+        <e p="SampleGrabberHelper.cs" t="Include" />
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages.config" t="Include" />
+      <e p="Public" t="Include">
+        <e p="AudioInput.cs" t="Include" />
+        <e p="Camera.cs" t="Include" />
+        <e p="CameraChoice.cs" t="Include" />
+        <e p="CameraControl.cs" t="Include" />
+        <e p="CameraControl.Designer.cs" t="Include" />
+        <e p="CameraControl.resx" t="Include" />
+        <e p="CameraControlWpf.xaml" t="Include" />
+        <e p="CameraControlWpf.xaml.cs" t="Include" />
+        <e p="Resolution.cs" t="Include" />
+        <e p="ResolutionList.cs" t="Include" />
+        <e p="VideoInput.cs" t="Include" />
+      </e>
+    </e>
+    <e p="E:\dev\3rd\Camera_Net\DirectShowLib" t="IncludeRecursive">
+      <e p="amstream.cs" t="Include" />
+      <e p="amvideo.cs" t="Include" />
+      <e p="app.config" t="Include" />
+      <e p="AssemblyInfo.cs" t="Include" />
+      <e p="atscpsipparser.cs" t="Include" />
+      <e p="austream.cs" t="Include" />
+      <e p="AxCore.cs" t="Include" />
+      <e p="AXExtend.cs" t="Include" />
+      <e p="BDAIface.cs" t="Include" />
+      <e p="Bdatif.cs" t="Include" />
+      <e p="BDATypes.cs" t="Include" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="Control.cs" t="Include" />
+      <e p="DES.cs" t="Include" />
+      <e p="DevEnum.cs" t="Include" />
+      <e p="DirectShowLib-2010.csproj" t="IncludeRecursive" />
+      <e p="DMODShow.cs" t="Include" />
+      <e p="dsattrib.cs" t="Include" />
+      <e p="DShowNET.snk" t="Include" />
+      <e p="DsUtils.cs" t="Include" />
+      <e p="dvbsiparser.cs" t="Include" />
+      <e p="DVDIf.cs" t="Include" />
+      <e p="DynGraph.cs" t="Include" />
+      <e p="encdec.cs" t="Include" />
+      <e p="EvCode.cs" t="Include" />
+      <e p="IL21Dec.cs" t="Include" />
+      <e p="MediaObj.cs" t="Include" />
+      <e p="MediaParam.cs" t="Include" />
+      <e p="Misc.cs" t="Include" />
+      <e p="Mixerocx.cs" t="Include" />
+      <e p="mmstream.cs" t="Include" />
+      <e p="mpconfig.cs" t="Include" />
+      <e p="Mpeg2Data.cs" t="Include" />
+      <e p="mpeg2psiparser.cs" t="Include" />
+      <e p="Mpeg2Structs.cs" t="Include" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="other.cs" t="Include" />
+      <e p="PlayList.cs" t="Include" />
+      <e p="QEdit.cs" t="Include" />
+      <e p="qnetwork.cs" t="Include" />
+      <e p="RegBag.cs" t="Include" />
+      <e p="Sbe.cs" t="Include" />
+      <e p="Tuner.cs" t="Include" />
+      <e p="TvRatings.cs" t="Include" />
+      <e p="Uuids.cs" t="Include" />
+      <e p="Vidcap.cs" t="Include" />
+      <e p="VidPort.cs" t="Include" />
+      <e p="Vmr9.cs" t="Include" />
+      <e p="VmRender.cs" t="Include" />
+    </e>
+    <e p="E:\dev\3rd\Camera_Net\Samples" t="IncludeFlat">
+      <e p="CameraControlSample" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CameraControlSample.csproj" t="IncludeRecursive" />
+        <e p="FormCameraControlSample.cs" t="Include" />
+        <e p="FormCameraControlSample.Designer.cs" t="Include" />
+        <e p="FormCameraControlSample.resx" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="Resources" t="Include" />
+      </e>
+      <e p="CameraControlTool" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Camera_icon.ico" t="Include" />
+        <e p="CameraControlTool.csproj" t="IncludeRecursive" />
+        <e p="FormCameraControlTool.cs" t="Include" />
+        <e p="FormCameraControlTool.Designer.cs" t="Include" />
+        <e p="FormCameraControlTool.resx" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="unzoom.png" t="Include" />
+        </e>
+      </e>
+      <e p="CameraSamples.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="VerySimple" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="FormVerySimple.cs" t="Include" />
+        <e p="FormVerySimple.Designer.cs" t="Include" />
+        <e p="FormVerySimple.resx" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="Resources" t="Include" />
+        <e p="VerySimple.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="VerySimpleWpf" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
+        <e p="App.xaml" t="Include" />
+        <e p="App.xaml.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="MainWindow.xaml" t="Include" />
+        <e p="MainWindow.xaml.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="VerySimpleWpf.csproj" t="IncludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>

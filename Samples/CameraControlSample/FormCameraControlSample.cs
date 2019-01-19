@@ -76,6 +76,7 @@ namespace CameraControlSample
         {
             // Close camera
             cameraControl.CloseCamera();
+            Application.Exit();
         }
 
         #endregion

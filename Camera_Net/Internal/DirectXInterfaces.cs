@@ -21,6 +21,8 @@ License along with this library. If not, see <http://www.gnu.org/licenses/>.
 
 #endregion
 
+using MediaFoundation.EVR;
+
 namespace Camera_NET
 {
     #region Using directives
@@ -59,6 +61,7 @@ namespace Camera_NET
         /// </summary>
         public IBaseFilter      VMRenderer = null;
         public IBaseFilter      AudioFilter = null;
+        public IMFVideoDisplayControl      IMFVideoDisplayControl = null;
 
         /// <summary>
         /// Crossbar (on some devices)
@@ -105,6 +108,7 @@ namespace Camera_NET
                 Marshal.ReleaseComObject(VMRenderer);
                 VMRenderer = null;
                 WindowlessCtrl = null;
+                IMFVideoDisplayControl = null;
                 MixerBitmap = null;
             }
             if (AudioFilter != null)

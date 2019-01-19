@@ -92,8 +92,8 @@ namespace Camera_NET
 
             // Build and Run graph
             _Camera.BuildGraph();
+            //_Camera.RunGraph();
             _Camera.RunGraph();
-
 
             _Camera.OutputVideoSizeChanged += Camera_OutputVideoSizeChanged;
         }

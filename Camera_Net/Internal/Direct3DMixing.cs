@@ -21,6 +21,7 @@ License along with this library. If not, see <http://www.gnu.org/licenses/>.
 
 #endregion
 
+
 #if USE_D3D
 namespace Camera_NET
 {
@@ -29,7 +30,7 @@ namespace Camera_NET
     using System;
     using System.Collections.Generic;
     using System.Text;
-    using Microsoft.DirectX.Direct3D;
+    using SharpDX.Direct3D9;
     using System.Windows.Forms;
     using System.Drawing;
 
@@ -61,7 +62,7 @@ namespace Camera_NET
             if (m_bDirect3DInitialized)
                 return; // Already done everything
 
-            Device.IsUsingEventHandlers = false;
+            // Device.IsUsingEventHandlers = false;
 
             // Basic Presentation Parameters...
             presentParams = new PresentParameters();
@@ -70,11 +71,11 @@ namespace Camera_NET
 
             // Assume a hardware Direct3D device is available
             // Add MultiThreaded to be safe. Each DirectShow filter runs in a separate thread...
-            device = new Device(
+            device = new Device(new Direct3D(),
                 0,
                 DeviceType.Hardware,
-                hostingControl,
-                CreateFlags.SoftwareVertexProcessing | CreateFlags.MultiThreaded,
+                hostingControl.Handle,
+                CreateFlags.HardwareVertexProcessing | CreateFlags.Multithreaded,
                 presentParams
                 );
 
@@ -104,9 +105,12 @@ namespace Camera_NET
         public void StoreBitmapToSurface(Bitmap alphaBitmap)
         {
             // Create a surface from our alpha bitmap
-            surface = new Surface(device, alphaBitmap, Pool.SystemMemory);
+            int width = alphaBitmap.Width;
+            int height = alphaBitmap.Height;
+            
+            
+            //surface = new Surface(device, alphaBitmap, Pool.SystemMemory);
             // Get the unmanaged pointer
-            unmanagedSurface = surface.GetObjectByValue(DxMagicNumber);
         }
 
         /// <summary>
@@ -127,7 +131,7 @@ namespace Camera_NET
         /// <summary>
         /// A pointer on the unmanaged surface
         /// </summary> 
-        public IntPtr unmanagedSurface;
+       // public IntPtr unmanagedSurface;
 
         /// <summary>
         /// Managed Direct3D magic number to retrieve unmanaged Direct3D interfaces.

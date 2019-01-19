@@ -21,6 +21,10 @@ License along with this library. If not, see <http://www.gnu.org/licenses/>.
 
 #endregion
 
+using MediaFoundation;
+using  MediaFoundation.EVR;
+using MediaFoundation.Misc;
+
 namespace Camera_NET
 {
     #region Using directives
@@ -40,7 +44,7 @@ namespace Camera_NET
     using DirectShowLib;
 
     #if USE_D3D
-    using Microsoft.DirectX.Direct3D;
+    using SharpDX.Direct3D9;
     #endif
 
     #endregion
@@ -126,7 +130,7 @@ namespace Camera_NET
         /// <summary>
         /// Private field. Use the public property <see cref="UseGDI"/> for access to this value.
         /// </summary>
-        private bool _UseGDI = true;
+        private bool _UseGDI = false;
         #endif
 
         #endregion
@@ -572,6 +576,7 @@ namespace Camera_NET
             _HostingControl = hControl;
 
             #if USE_D3D
+            this.UseGDI = false;
             if (!_UseGDI)
             {
                 // Init Managed Direct3D
@@ -654,7 +659,7 @@ namespace Camera_NET
             _bMixerEnabled = false;
 
 #if USE_D3D
-            _UseGDI = true;
+            _UseGDI = false;
 
             // Dispose Managed Direct3D objects
             if (_pDirect3DMixing != null)
@@ -683,6 +688,7 @@ namespace Camera_NET
                 // -------------------------------------------------------
                 DX.FilterGraph = (IFilterGraph2)new FilterGraph();
                 DX.MediaControl = (IMediaControl)DX.FilterGraph;
+                
 
                 // Log file if needed
                 ApplyDirectShowLogFile();
@@ -725,19 +731,57 @@ namespace Camera_NET
             GC.WaitForPendingFinalizers();
 #endif
         }
-
         /// <summary>
         /// Runs DirectShow graph for rendering.
         /// </summary>
         public void RunGraph()
         {
             //var graph_guilder = (ICaptureGraphBuilder2)new CaptureGraphBuilder2();
-            //int hr = graph_guilder.RenderStream(PinCategory.Preview, MediaType.Video, DX.CaptureFilter, null, DX.VMRenderer);
+            //int hr;
+            ////hr =graph_guilder.SetFiltergraph(DX.FilterGraph);
+            ////DsError.ThrowExceptionForHR(hr);
+//
+            //hr = graph_guilder.RenderStream(PinCategory.Preview, MediaType.Audio, DX.CaptureFilter, null, DX.AudioFilter);
             //DsError.ThrowExceptionForHR(hr);
 
            if (DX.MediaControl != null)
            {
                int hr = DX.MediaControl.Run();
+               
+               DsError.ThrowExceptionForHR(hr);
+           }
+
+        }
+        public void RunGraph2()
+        {
+            DX.FilterGraph = (IFilterGraph2)new FilterGraph();
+            DX.MediaControl = (IMediaControl)DX.FilterGraph;
+            AddFilter_Source();
+            SetSourceParams();
+            //AddFilter_Renderer();
+            //GraphBuilding_ConnectPins();
+//
+            
+
+            var graph_guilder = (ICaptureGraphBuilder2)new CaptureGraphBuilder2();
+            int hr;
+            hr =graph_guilder.SetFiltergraph(DX.FilterGraph);
+            DsError.ThrowExceptionForHR(hr);
+//
+            IVideoWindow window = (IVideoWindow)DX.FilterGraph;
+            window.put_Owner(this._HostingControl.Handle);
+            window.put_MessageDrain(this._HostingControl.Handle);
+            hr = graph_guilder.RenderStream(PinCategory.Capture, MediaType.Video, DX.CaptureFilter, null, DX.VMRenderer);
+            DsError.ThrowExceptionForHR(hr);
+            hr = graph_guilder.RenderStream(PinCategory.Preview, MediaType.Audio, DX.CaptureFilter, null, DX.AudioFilter);
+            DsError.ThrowExceptionForHR(hr);
+            
+            
+            //PostActions_Renderer();
+           if (DX.MediaControl != null)
+           {
+               hr = DX.MediaControl.Run();
+               
                DsError.ThrowExceptionForHR(hr);
            }
 
@@ -1051,7 +1095,7 @@ namespace Camera_NET
             VideoInfoHeader videoInfoHeader = new VideoInfoHeader();
             Marshal.PtrToStructure(media_type.formatPtr, videoInfoHeader);
 
-            return new Resolution(videoInfoHeader.BmiHeader.Width, videoInfoHeader.BmiHeader.Height);
+            return new Resolution(videoInfoHeader.BmiHeader.Width, videoInfoHeader.BmiHeader.Height, ( 10000000/(float)videoInfoHeader.AvgTimePerFrame).ToString());
         }
 
 
@@ -1254,13 +1298,16 @@ namespace Camera_NET
                 //PinInfo pi = new PinInfo();
 
                 IReferenceClock ss;
-                DX.CaptureFilter.GetSyncSource(out ss);
-                DX.CaptureFilter.SetSyncSource(null);
-                DX.VMRenderer.SetSyncSource(null);
-                DX.AudioFilter.SetSyncSource(null);
-                DX.SmartTee.SetSyncSource(null);
-                DX.InfTee.SetSyncSource(null);
-                DX.SampleGrabberFilter.SetSyncSource(null);
+                hr = DX.CaptureFilter.GetSyncSource(out ss);
+                hr = DX.CaptureFilter.SetSyncSource(null);
+                DsError.ThrowExceptionForHR(hr);
+                hr = DX.VMRenderer.SetSyncSource(null);
+                DsError.ThrowExceptionForHR(hr);
+                hr = DX.AudioFilter.SetSyncSource(null);
+                DsError.ThrowExceptionForHR(hr);
+                if(DX.SmartTee != null)DX.SmartTee.SetSyncSource(null);
+                if(DX.InfTee != null)DX.InfTee.SetSyncSource(null);
+                if(DX.SampleGrabberFilter != null)DX.SampleGrabberFilter.SetSyncSource(null);
                 IEnumFilters enumFilters;
                 hr = DX.FilterGraph.EnumFilters(out enumFilters);
                 DsError.ThrowExceptionForHR(hr);
@@ -1295,7 +1342,7 @@ namespace Camera_NET
                 Marshal.ReleaseComObject(enumFilters);
 
 
-                int BufferSizeMilliSeconds = 0;
+                int BufferSizeMilliSeconds = -1;
                 IAMStreamConfig sc = (IAMStreamConfig)pinSourceAudio;
                 IAMBufferNegotiation bufferNegotiation = (IAMBufferNegotiation)pinSourceAudio;
                 AMMediaType mt;
@@ -1312,15 +1359,15 @@ namespace Camera_NET
                 DsError.ThrowExceptionForHR(hr);
 
 
-                pinTeeInput = DsFindPin.ByDirection(DX.SmartTee, PinDirection.Input, 0);
-                pinTeePreview = DsFindPin.ByName(DX.SmartTee, "Preview");
-                pinTeeCapture = DsFindPin.ByName(DX.SmartTee, "Capture");
-                pinInfTeeInput = DsFindPin.ByDirection(DX.InfTee, PinDirection.Input,0);
-                pinInfTeeOutput = DsFindPin.ByDirection(DX.InfTee, PinDirection.Output,0);
+                if(DX.SmartTee != null)pinTeeInput = DsFindPin.ByDirection(DX.SmartTee, PinDirection.Input, 0);
+                if(DX.SmartTee != null)pinTeePreview = DsFindPin.ByName(DX.SmartTee, "Preview");
+                if(DX.SmartTee != null)pinTeeCapture = DsFindPin.ByName(DX.SmartTee, "Capture");
+                if(DX.InfTee != null)pinInfTeeInput = DsFindPin.ByDirection(DX.InfTee, PinDirection.Input,0);
+                if(DX.InfTee != null)pinInfTeeOutput = DsFindPin.ByDirection(DX.InfTee, PinDirection.Output,0);
                 
                 
 
-                pinSampleGrabberInput = DsFindPin.ByDirection(DX.SampleGrabberFilter, PinDirection.Input, 0);
+                if(DX.SampleGrabberFilter != null)pinSampleGrabberInput = DsFindPin.ByDirection(DX.SampleGrabberFilter, PinDirection.Input, 0);
                 pinRendererInput = DsFindPin.ByDirection(DX.VMRenderer, PinDirection.Input, 0);
                 pinAudioCapture = DsFindPin.ByDirection(DX.AudioFilter, PinDirection.Input, 0);
 
@@ -1328,21 +1375,23 @@ namespace Camera_NET
                 //hr = DX.FilterGraph.Connect(pinSourceCapture, pinTeeInput);
                 //DsError.ThrowExceptionForHR(hr);
 
-                hr = DX.FilterGraph.Connect(pinSourceCapture, pinInfTeeInput);
-                DsError.ThrowExceptionForHR(hr);
+                if(DX.InfTee != null)hr = DX.FilterGraph.Connect(pinSourceCapture, pinInfTeeInput);
+                if(DX.InfTee != null)DsError.ThrowExceptionForHR(hr);
                 
                // // Connect samplegrabber on preview-pin of tee splitter
 
+               if (DX.InfTee != null)
+               {
+                   // Connect the capture-pin of tee splitter to the renderer
+                   hr = DX.FilterGraph.Connect(pinInfTeeOutput, pinRendererInput);
+                   DsError.ThrowExceptionForHR(hr);
 
-                // Connect the capture-pin of tee splitter to the renderer
-                hr = DX.FilterGraph.Connect(pinInfTeeOutput, pinRendererInput);
-                DsError.ThrowExceptionForHR(hr);
+                   pinInfTeeOutput2 = DsFindPin.ByDirection(DX.InfTee, PinDirection.Output, 1);
+                   hr = DX.FilterGraph.Connect(pinInfTeeOutput2, pinSampleGrabberInput);
+                   DsError.ThrowExceptionForHR(hr);
+               }
 
-                pinInfTeeOutput2 = DsFindPin.ByDirection(DX.InfTee, PinDirection.Output, 1);
-                 hr = DX.FilterGraph.Connect(pinInfTeeOutput2, pinSampleGrabberInput);
-                 DsError.ThrowExceptionForHR(hr);
-
-                // Connect the capture-pin of tee splitter to the renderer
+               // Connect the capture-pin of tee splitter to the renderer
                 hr = DX.FilterGraph.Connect(pinSourceAudio, pinAudioCapture);
                 DsError.ThrowExceptionForHR(hr);
 
@@ -1443,7 +1492,7 @@ namespace Camera_NET
 
                 // Route Crossbar's inputs
                 SetCrossbarInput(DX.Crossbar, _VideoInput);
-                SetCrossbarInput(DX.Crossbar, _AudioInput);
+                //SetCrossbarInput(DX.Crossbar, _AudioInput);
 
                 _VideoInput = GetCrossbarInput(DX.Crossbar);
             }
@@ -1457,12 +1506,18 @@ namespace Camera_NET
             int hr = 0;
             int hr2 = 0;
 
-            DX.VMRenderer = (IBaseFilter) new VideoMixingRenderer9();
+            var enhancedVideoRenderer = new EnhancedVideoRenderer();
+            DX.VMRenderer = (IBaseFilter)enhancedVideoRenderer;
+            //var typeFromClsid = Type.GetTypeFromCLSID(new Guid("{FA10746C-9B63-4B6C-BC49-FC300EA5F256}"));
+            //DX.VMRenderer = (IBaseFilter)Activator.CreateInstance(typeFromClsid);
+
+            //DX.VMRenderer = (IBaseFilter) new VideoMixingRenderer9();
             DX.AudioFilter = (IBaseFilter) new DSoundRender();
             //var dsr = new DirectShowLib.DSoundRender();
 
             
-            ConfigureVMRInWindowlessMode();
+            //ConfigureVMRInWindowlessMode();
+            ConfigureEVRInWindowlessMode();
 
 
             hr = DX.FilterGraph.AddFilter(DX.VMRenderer, "Video Mixing Renderer 9");
@@ -1471,41 +1526,69 @@ namespace Camera_NET
             DsError.ThrowExceptionForHR(hr2);
         }
 
+        private void ConfigureEVRInWindowlessMode()
+        {
+            int hr = 0;
+
+            var service = (IMFGetService) DX.VMRenderer;
+            IMFVideoDisplayControl config;
+            HResult hr2 =service.GetService(new Guid("1092a86c-ab1a-459a-a336-831fbc4d11ff"),out config);
+            MFError.ThrowExceptionForHR(hr2);
+            hr2 = config.SetVideoWindow(_HostingControl.Handle);
+            MFError.ThrowExceptionForHR(hr2);
+            //hr2 = config.SetAspectRatioMode(MFVideoAspectRatioMode.PreservePixel);
+            MFError.ThrowExceptionForHR(hr2);
+            DX.IMFVideoDisplayControl = config;
+           // DsError.ThrowExceptionForHR(hr);
+            // Not really needed for vmr but don't forget calling it with VMR7
+            //hr = filterConfig.put_MessageDrain();
+            //DsError.ThrowExceptionForHR(hr);
+
+            // Change vmr mode to Windowless
+            //hr = filterConfig.SetRenderingMode(VMR9Mode.Windowless);
+            //DsError.ThrowExceptionForHR(hr);
+//
+            //DX.WindowlessCtrl = (IVMRWindowlessControl9)DX.VMRenderer;
+
+            // Set "Parent" window
+            //if (_HostingControl != null)
+            //{
+            //    hr = DX.WindowlessCtrl.SetVideoClippingWindow(_HostingControl.Handle);
+            //    DsError.ThrowExceptionForHR(hr);
+            //}
+//
+            //// Set Aspect-Ratio
+            //hr = DX.WindowlessCtrl.SetAspectRatioMode(VMR9AspectRatioMode.LetterBox);
+            //DsError.ThrowExceptionForHR(hr);
+
+            // Add delegates for Windowless operations
+            AddHandlers();
+
+            // Call the resize handler to configure the output size
+            HostingControl_ResizeMove_evr(null, null);
+        }
+
         /// <summary>
         /// Does stuff for renderer (set video size, resolution, etc.) after graph building before rendering.
         /// </summary>
         private void PostActions_Renderer()
         {
-            int hr = 0;
+            HResult hr = 0;
 
             // Save resolution
-            int video_width, video_height, arW, arH;
-            hr = DX.WindowlessCtrl.GetNativeVideoSize(out video_width, out video_height, out arW, out arH);
-            DsError.ThrowExceptionForHR(hr);
+            if (DX.IMFVideoDisplayControl != null)
+            {
+                int video_width, video_height, arW, arH;
+                MFSize size = new MFSize();
+                MFSize asize = new MFSize();
 
-            _Resolution = new Resolution(video_width, video_height);
+                hr = DX.IMFVideoDisplayControl.GetNativeVideoSize(size, asize);
+                MFError.ThrowExceptionForHR(hr);
+                video_width = size.Width;
+                video_height = size.Height;
 
-
-            // For VMR9
-            DX.MixerBitmap = (IVMRMixerBitmap9)DX.VMRenderer;
-
-            #region Code for VMR7 to set PointFiltering
-            // For VMR7:
-            //mixerBitmap = (IVMRMixerBitmap)vmr;
-
-            // For VMR7:
-            //// Request point filtering (instead of bilinear filtering)
-            //IVMRMixerControl pMixerControl = (IVMRMixerControl) vmr;
-
-            //VMRMixerPrefs dwMixerPrefs = 0;
-            //hr = pMixerControl.GetMixingPrefs(out dwMixerPrefs);
-            //DsError.ThrowExceptionForHR(hr);
-
-            //dwMixerPrefs = (dwMixerPrefs | VMRMixerPrefs.PointFiltering) & (~VMRMixerPrefs.BiLinearFiltering);
-
-            //hr = pMixerControl.SetMixingPrefs(dwMixerPrefs);
-            //DsError.ThrowExceptionForHR(hr);
-            #endregion
+                _Resolution = new Resolution(video_width, video_height);
+            }
         }
 
         /// <summary>
@@ -1539,7 +1622,7 @@ namespace Camera_NET
             DsError.ThrowExceptionForHR(hr);
 
             // Add delegates for Windowless operations
-            AddHandlers();
+            //AddHandlers();
 
             // Call the resize handler to configure the output size
             HostingControl_ResizeMove(null, null);
@@ -1796,7 +1879,6 @@ namespace Camera_NET
             SystemEvents.DisplaySettingsChanged += new EventHandler(SystemEvents_DisplaySettingsChanged); // for WM_DISPLAYCHANGE
             _bHandlersAdded = true;
         }
-
         /// <summary>
         /// Removes event handlers for hosting control.
         /// </summary>
@@ -1823,12 +1905,13 @@ namespace Camera_NET
             if (!_bGraphIsBuilt)
                 return; // Do nothing before graph was built
 
-            if (DX.WindowlessCtrl != null && _HostingControl != null)
+            if (DX.IMFVideoDisplayControl != null && _HostingControl != null)
             {
                 IntPtr hdc = e.Graphics.GetHdc();
                 try
                 {
-                    int hr = DX.WindowlessCtrl.RepaintVideo(_HostingControl.Handle, hdc);
+                    HResult hr = DX.IMFVideoDisplayControl.RepaintVideo(  );
+                    MFError.ThrowExceptionForHR(hr);
                 }
                 catch (System.Runtime.InteropServices.COMException ex)
                 {
@@ -1858,12 +1941,12 @@ namespace Camera_NET
         /// <seealso cref="HostingControl"/>
         private void HostingControl_ResizeMove(object sender, EventArgs e)
         {
-            if (DX.WindowlessCtrl == null)
+            if (DX.IMFVideoDisplayControl == null)
                 return;
             if (_HostingControl == null)
                 return;
 
-            int hr = DX.WindowlessCtrl.SetVideoPosition(null, DsRect.FromRectangle(_HostingControl.ClientRectangle));
+            HResult hr = DX.IMFVideoDisplayControl.SetVideoPosition(null, MFRect.FromRectangle(_HostingControl.ClientRectangle));
 
             if (!_bGraphIsBuilt)
                 return; // Do nothing before graph was built
@@ -1886,7 +1969,36 @@ namespace Camera_NET
             //// Get the unmanaged pointer
             //unmanagedSurface = surface.GetObjectByValue(DxMagicNumber);
         }
+        private void HostingControl_ResizeMove_evr(object sender, EventArgs e)
+        {
+            if (DX.IMFVideoDisplayControl == null)
+                return;
+            if (_HostingControl == null)
+                return;
 
+            HResult hr = DX.IMFVideoDisplayControl.SetVideoPosition(null, MFRect.FromRectangle(_HostingControl.ClientRectangle));
+            
+            if (!_bGraphIsBuilt)
+                return; // Do nothing before graph was built
+
+            UpdateOutputVideoSize();
+
+            // Call event handlers (External)
+            if (OutputVideoSizeChanged != null)
+            {
+                OutputVideoSizeChanged(sender, e);
+            }
+        
+            
+
+            //// Get the bitmap with alpha transparency
+            //alphaBitmap = BitmapGenerator.GenerateAlphaBitmap(p.Width, p.Height);
+
+            //// Create a surface from our alpha bitmap
+            //surface = new Surface(device, alphaBitmap, Pool.SystemMemory);
+            //// Get the unmanaged pointer
+            //unmanagedSurface = surface.GetObjectByValue(DxMagicNumber);
+        }
         /// <summary>
         /// Handler of SystemEvents.DisplaySettingsChanged.
         /// </summary>
@@ -2202,8 +2314,13 @@ namespace Camera_NET
             int w = _HostingControl.ClientRectangle.Width;
             int h = _HostingControl.ClientRectangle.Height;
 
-            int video_width  = _Resolution.Width;
-            int video_height = _Resolution.Height;
+            int video_width  = 1920;
+            int video_height = 1080;
+            if (DX.IMFVideoDisplayControl != null)
+            {
+                video_width  = _Resolution.Width;
+                video_height = _Resolution.Height;
+            }
 
             // Check size of video data, to save original ratio
             int window_width = _HostingControl.ClientRectangle.Width;
@@ -2295,6 +2412,7 @@ namespace Camera_NET
                 //throw new Exception(@"Overlay bitmap should be already initialized.");
                 return;
             }
+/*
 
 #if USE_D3D
             if (_UseGDI)
@@ -2347,7 +2465,7 @@ namespace Camera_NET
                 hr = DX.MixerBitmap.SetAlphaBitmap(ref alphaBmp);
                 DsError.ThrowExceptionForHR(hr);
             }
-#endif
+#endif*/
             _bMixerImageWasUsed = true;
 
         }
