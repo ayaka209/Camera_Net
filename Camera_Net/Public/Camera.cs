@@ -742,7 +742,7 @@ namespace Camera_NET
             ////hr =graph_guilder.SetFiltergraph(DX.FilterGraph);
             ////DsError.ThrowExceptionForHR(hr);
 //
-            //hr = graph_guilder.RenderStream(PinCategory.Preview, MediaType.Audio, DX.CaptureFilter, null, DX.AudioFilter);
+            //hr = graph_guilder.RenderStream(PinCategory.Preview, MediaType.Audio, DX.CaptureFilter, null, DX.AudioRender);
             //DsError.ThrowExceptionForHR(hr);
 
            if (DX.MediaControl != null)
@@ -774,7 +774,7 @@ namespace Camera_NET
             window.put_MessageDrain(this._HostingControl.Handle);
             hr = graph_guilder.RenderStream(PinCategory.Capture, MediaType.Video, DX.CaptureFilter, null, DX.VMRenderer);
             DsError.ThrowExceptionForHR(hr);
-            hr = graph_guilder.RenderStream(PinCategory.Preview, MediaType.Audio, DX.CaptureFilter, null, DX.AudioFilter);
+            hr = graph_guilder.RenderStream(PinCategory.Preview, MediaType.Audio, DX.CaptureFilter, null, DX.AudioRender);
             DsError.ThrowExceptionForHR(hr);
             
             
@@ -1282,7 +1282,7 @@ namespace Camera_NET
             IPin pinInfTeeInput = null;
             IPin pinInfTeeOutput = null;
             IPin pinInfTeeOutput2 = null;
-            IPin pinAudioCapture = null;
+            IPin pinAudioRender = null;
             IPin pinVideoProcessorInput = null;
             IPin pinVideoProcessorOutput = null;
 
@@ -1310,7 +1310,7 @@ namespace Camera_NET
                 DsError.ThrowExceptionForHR(hr);
                 hr = DX.VMRenderer.SetSyncSource(null);
                 DsError.ThrowExceptionForHR(hr);
-                hr = DX.AudioFilter.SetSyncSource(null);
+                hr = DX.AudioRender.SetSyncSource(null);
                 DsError.ThrowExceptionForHR(hr);
                 if(DX.SmartTee != null)DX.SmartTee.SetSyncSource(null);
                 if(DX.InfTee != null)DX.InfTee.SetSyncSource(null);
@@ -1349,7 +1349,7 @@ namespace Camera_NET
                 Marshal.ReleaseComObject(enumFilters);
 
 
-                int BufferSizeMilliSeconds = 30;
+                int BufferSizeMilliSeconds = 10;
                 IAMStreamConfig sc = (IAMStreamConfig)pinSourceAudio;
                 IAMBufferNegotiation bufferNegotiation = (IAMBufferNegotiation)pinSourceAudio;
                 AMMediaType mt;
@@ -1358,12 +1358,23 @@ namespace Camera_NET
                 ap.cbAlign = -1;
                 ap.cbAlign = -1;
                 ap.cbPrefix = -1;
-                WaveFormatEx wf = (WaveFormatEx) Marshal.PtrToStructure(mt.formatPtr, typeof(WaveFormatEx));
-                ap.cbBuffer = wf.nAvgBytesPerSec * BufferSizeMilliSeconds/1000;
-                
+                //WaveFormatEx wf = (WaveFormatEx) Marshal.PtrToStructure(mt.formatPtr, typeof(WaveFormatEx));
+                //ap.cbBuffer = wf.nAvgBytesPerSec * BufferSizeMilliSeconds/1000;
+                ap.cbBuffer = 1920;
                 
                 hr = bufferNegotiation.SuggestAllocatorProperties(ap);
                 DsError.ThrowExceptionForHR(hr);
+                
+                
+                pinAudioRender = DsFindPin.ByDirection(DX.AudioRender, PinDirection.Input, 0);
+
+                
+               // sc = (IAMStreamConfig)pinAudioCapture;
+               //bufferNegotiation = (IAMBufferNegotiation)pinAudioRender;
+
+               //hr = bufferNegotiation.SuggestAllocatorProperties(ap);
+               //DsError.ThrowExceptionForHR(hr);
+                
 
 
                 if(DX.SmartTee != null)pinTeeInput = DsFindPin.ByDirection(DX.SmartTee, PinDirection.Input, 0);
@@ -1376,7 +1387,6 @@ namespace Camera_NET
 
                 if(DX.SampleGrabberFilter != null)pinSampleGrabberInput = DsFindPin.ByDirection(DX.SampleGrabberFilter, PinDirection.Input, 0);
                 pinRendererInput = DsFindPin.ByDirection(DX.VMRenderer, PinDirection.Input, 0);
-                pinAudioCapture = DsFindPin.ByDirection(DX.AudioFilter, PinDirection.Input, 0);
 
                 // Connect source to tee splitter
                 //hr = DX.FilterGraph.Connect(pinSourceCapture, pinTeeInput);
@@ -1401,7 +1411,7 @@ namespace Camera_NET
                }
 
                // Connect the capture-pin of tee splitter to the renderer
-                hr = DX.FilterGraph.Connect(pinSourceAudio, pinAudioCapture);
+                hr = DX.FilterGraph.Connect(pinSourceAudio, pinAudioRender);
                 DsError.ThrowExceptionForHR(hr);
 
                // DX.FilterGraph.SetDefaultSyncSource();
@@ -1522,7 +1532,7 @@ namespace Camera_NET
             //DX.VMRenderer = (IBaseFilter)Activator.CreateInstance(typeFromClsid);
 
             //DX.VMRenderer = (IBaseFilter) new VideoMixingRenderer9();
-            DX.AudioFilter = (IBaseFilter) new DSoundRender();
+            DX.AudioRender = (IBaseFilter) new DSoundRender();
             //var dsr = new DirectShowLib.DSoundRender();
 
             
@@ -1531,7 +1541,7 @@ namespace Camera_NET
 
 
             hr = DX.FilterGraph.AddFilter(DX.VMRenderer, "Video Mixing Renderer 9");
-            hr2 = DX.FilterGraph.AddFilter(DX.AudioFilter, "Audio Renderer");
+            hr2 = DX.FilterGraph.AddFilter(DX.AudioRender, "Audio Renderer");
             DsError.ThrowExceptionForHR(hr);
             DsError.ThrowExceptionForHR(hr2);
             hr2 = DX.FilterGraph.AddFilter(DX.Processer, "Processor");
