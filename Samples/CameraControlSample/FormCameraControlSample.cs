@@ -174,5 +174,29 @@ namespace CameraControlSample
 
         #endregion
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (!cameraControl.CameraCreated)
+                return;
+
+            int comboBoxResolutionIndex = comboBoxResolutionList.SelectedIndex;
+            if (comboBoxResolutionIndex < 0)
+            {
+                return;
+            }
+            ResolutionList resolutions = Camera.GetResolutionList(cameraControl.Moniker);
+
+            if (resolutions == null)
+                return;
+
+            if (comboBoxResolutionIndex >= resolutions.Count)
+                return; // throw
+            
+
+            // Recreate camera
+            //SetCamera(_Camera.Moniker, resolutions[comboBoxResolutionIndex]);
+            cameraControl.SetCamera(cameraControl.Moniker, resolutions[comboBoxResolutionIndex]);
+
+        }
     }
 }
